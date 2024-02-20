@@ -1,14 +1,7 @@
 # OWASP 大規模言語モデルセキュリティ検証標準
-[![CC BY-SA 4.0][cc-by-sa-shield]][cc-by-sa]
 
-この成果物は [Creative Commons Attribution-ShareAlike 4.0 International License][cc-by-sa] の下でライセンスされています。
-
-
-[![CC BY-SA 4.0][cc-by-sa-image]][cc-by-sa]
-
-[cc-by-sa]: http://creativecommons.org/licenses/by-sa/4.0/
-[cc-by-sa-image]: https://licensebuttons.net/l/by-sa/4.0/88x31.png
-[cc-by-sa-shield]: https://img.shields.io/badge/License-CC%20BY--SA%204.0-blue.svg
+[![OWASP Incubator](https://img.shields.io/badge/owasp-incubator-blue.svg)](https://owasp.org/www-project-llm-verification-standard/)
+[![Creative Commons License](https://img.shields.io/github/license/OWASP/www-project-llm-verification-standard)](https://creativecommons.org/licenses/by-sa/4.0/ "CC BY-SA 4.0")
 
 ## はじめに
 
@@ -27,6 +20,7 @@ OWASP 大規模言語モデルセキュリティ検証標準 (Large Language Mod
 ## 初期ドラフトバージョン - 0.1
 
 最初の安定バージョンはバージョン 0.1 (2024 年 2 月付け) で、以下にあります。
+
 * [OWASP Large Language Model Security Verification Standard 0.1 English (PDF)](https://github.com/OWASP/www-project-llm-verification-standard/releases/tag/0.1)
 
 このブランチのマスターブランチは常に "bleeding edge version" であり、進行中の変更や他の編集が開いているかもしれません。
@@ -43,6 +37,6 @@ OWASP 大規模言語モデルセキュリティ検証標準 (Large Language Mod
 6. **LLM セキュリティのベストプラクティスを推進する**: LLM ベースのシステムのセキュリティ保護において、業界のベストプラクティスの採用を奨励します。
 7. **利害関係者間でのセキュリティに対する期待を調整する**: 開発者、セキュリティ専門家、ベンダー、クライアントの間でセキュリティへの期待について共通認識を確立します。
 
-## License
+## ライセンス
 
-The entire project content is under the **[Creative Commons Attribution-Share Alike v3.0](https://creativecommons.org/licenses/by-sa/3.0/)** license.
+プロジェクトのコンテンツ全体は **[Creative Commons Attribution-Share Alike v4.0](LICENSE.md)** ライセンスの下にあります。
