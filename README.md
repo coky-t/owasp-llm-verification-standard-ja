@@ -7,7 +7,7 @@ This is the unofficial Japanese translation of the [OWASP Large Language Model S
 - Project Site - <https://owasp.org/www-project-llm-verification-standard/>
 - Project Repository - <https://github.com/OWASP/www-project-llm-verification-standard>
 
-# OWASP 大規模言語モデルセキュリティ検証標準 0.1 日本語版
+## OWASP 大規模言語モデルセキュリティ検証標準 0.1 日本語版
 
 * [OWASP 大規模言語モデルセキュリティ検証標準](Document/README.md)
 * [リーダー](Document/leaders.md)
