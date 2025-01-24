@@ -1,6 +1,8 @@
-# OWASP 大規模言語モデルセキュリティ検証標準 0.1 日本語版
+# OWASP Large Language Model Security Verification Standard ja
 
-- [OWASP 大規模言語モデルセキュリティ検証標準 0.1 日本語版](README.md)
+- [OWASP Large Language Model Security Verification Standard ja](README.md)
+
+## OWASP 大規模言語モデルセキュリティ検証標準 0.1 日本語版
 
 - [OWASP 大規模言語モデルセキュリティ検証標準](Document/README.md)
 - [リーダー](Document/leaders.md)
