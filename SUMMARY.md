@@ -15,3 +15,4 @@
 - [V6. エージェントとプラグイン (Agents and Plugins)](Document/0.1/ja/0x15-V6-Agent-and-Plugins.md)
 - [V7. 依存関係とコンポーネント (Dependency and Component)](Document/0.1/ja/0x16-V7-Dependency-and-Component-Security.md)
 - [V8. 監視と異常検出 (Monitoring and Anomaly Detection)](Document/0.1/ja/0x17-V8-Monitoring-and-Anomaly-Detection.md)
+- [V9. モデルコンテキストプロトコル (MCP) セキュリティ (Model Context Protocol (MCP) Security)](Document/0.1/ja/0x18-V9-Model-Context-Protocol.md)
