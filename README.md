@@ -2,6 +2,9 @@
 
 This is the unofficial Japanese translation of the [OWASP Large Language Model Security Verification Standard](https://github.com/OWASP/www-project-llm-verification-standard).
 
+- Document Site - <https://coky-t.gitbook.io/owasp-llm-verification-standard-ja/>
+- Document Repository - <https://github.com/coky-t/owasp-llm-verification-standard-ja>
+
 ### Originator
 
 - Project Site - <https://owasp.org/www-project-llm-verification-standard/>
@@ -28,3 +31,6 @@ This is the unofficial Japanese translation of the [OWASP Large Language Model S
 ## Translator (Japanese)
 
 [Koki Takeyama](https://github.com/coky-t)
+
+- Document Site - <https://coky-t.gitbook.io/owasp-docs-ja/>
+- Document Repository - <https://github.com/coky-t/owasp-docs-ja>
