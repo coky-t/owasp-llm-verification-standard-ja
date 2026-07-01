@@ -18,7 +18,7 @@ status: release
   - [本標準について](#about-the-standard)
   - [著作権およびライセンス](#copyright-and-license)
   - [プロジェクトリーダー](#project-leads)
-  - [Other contributors and reviewers](#other-contributors-and-reviewers)
+  - [他の貢献者およびレビュー担当者](#other-contributors-and-reviewers)
   - [Major supporters and sponsors](#major-supporters-and-sponsors)
 - [Preface](#preface)
 - [Utilizing the LLMSVS](#utilizing-the-llmsvs)
@@ -54,9 +54,9 @@ Copyright © 2008–2024 The OWASP Foundation. このドキュメントは [Crea
 - Vandana Verma Sehgal
 - Elliot Ward
 
-### Other contributors and reviewers
+### 他の貢献者およびレビュー担当者 <a name="other-contributors-and-reviewers"></a>
 
-| Name | Organization |
+| 氏名 | 組織 |
 | ---- | ------------ |
 | Eric Allen | Lakera |
 | Frawa Vetterli | Lakera |
@@ -65,9 +65,9 @@ Copyright © 2008–2024 The OWASP Foundation. このドキュメントは [Crea
 | Moshe Ben-Nehemia | Snyk |
 | Sam Watts | Lakera |
 
-If a credit is missing from the 0.1 credit list above, please log a ticket on GitHub to be recognized in future 0.x updates.
+クレジットが上記の 0.1 クレジットリストから漏れている場合には、今後の 0.x アップデートで反映されるために GitHub にチケットを登録してください。
 
-The Large Language Model Security Verification Standard is built upon the initial research performed into LLM security by the Snyk Security Labs team in 2023. Much of the concept, structure, boilerplate and tooling for the LLMSVS has been adapted from the OWASP ASVS project. Thank you to all those previously involved in the OWASP ASVS.
+大規模言語モデルセキュリティ検証標準は Snyk Security Labs チームが 2023 年に実施した LLM セキュリティに関する初期研究に基づいて構築されています。LLMSVS の概念、構造、定型、ツールの多くは OWASP ASVS プロジェクトから採用されています。OWASP ASVS にこれまで関わってこられた皆様に感謝します。
 
 ### Major supporters and sponsors
 
