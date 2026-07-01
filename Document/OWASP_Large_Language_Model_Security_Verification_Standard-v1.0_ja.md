@@ -15,7 +15,7 @@ status: release
 ## 目次
 
 - [扉](#frontispiece)
-  - [About the standard](#about-the-standard)
+  - [本標準について](#about-the-standard)
   - [Copyright and license](#copyright-and-license)
   - [Project leads](#project-leads)
   - [Other contributors and reviewers](#other-contributors-and-reviewers)
@@ -41,9 +41,9 @@ status: release
 
 ## 扉 <a name="frontispiece"></a>
 
-### About the standard
+### 本標準について <a name="about-the-standard"></a>
 
-The Large Language Model Security Verification Standard is a list of specific AI and LLM security requirements or tests that can be used by architects, developers, testers, security professionals, tool vendors, and consumers to define, build, test and verify secure LLM driven applications.
+大規模言語モデルセキュリティ検証標準は、アーキテクト、開発者、テスト担当者、セキュリティ専門家、ツールベンダー、および消費者によって、安全な LLM 駆動型アプリケーションを定義、構築、テスト、検証するために使用できる、特定の AI および LLM セキュリティ要件やテストのリストです。
 
 ### Copyright and license
 
