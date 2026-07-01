@@ -16,7 +16,7 @@ status: release
 
 - [扉](#frontispiece)
   - [本標準について](#about-the-standard)
-  - [Copyright and license](#copyright-and-license)
+  - [著作権およびライセンス](#copyright-and-license)
   - [Project leads](#project-leads)
   - [Other contributors and reviewers](#other-contributors-and-reviewers)
   - [Major supporters and sponsors](#major-supporters-and-sponsors)
@@ -45,9 +45,9 @@ status: release
 
 大規模言語モデルセキュリティ検証標準は、アーキテクト、開発者、テスト担当者、セキュリティ専門家、ツールベンダー、および消費者によって、安全な LLM 駆動型アプリケーションを定義、構築、テスト、検証するために使用できる、特定の AI および LLM セキュリティ要件やテストのリストです。
 
-### Copyright and license
+### 著作権およびライセンス <a name="copyright-and-license"></a>
 
-Copyright © 2008–2024 The OWASP Foundation. This document is released under the [Creative Commons Attribution-ShareAlike 4.0 International License](https://creativecommons.org/licenses/by-sa/4.0/). For any reuse or distribution, you must make clear to others the license terms of this work.
+Copyright © 2008–2024 The OWASP Foundation. このドキュメントは [Creative Commons Attribution-ShareAlike 4.0 International License](https://creativecommons.org/licenses/by-sa/4.0/) の下でリリースされています。再使用または配布する場合は、他者に対し本著作物のライセンス条項を明らかにする必要があります。
 
 ### Project leads
 
