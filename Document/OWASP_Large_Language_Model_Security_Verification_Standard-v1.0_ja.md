@@ -17,7 +17,7 @@ status: release
 - [扉](#frontispiece)
   - [本標準について](#about-the-standard)
   - [著作権およびライセンス](#copyright-and-license)
-  - [Project leads](#project-leads)
+  - [プロジェクトリーダー](#project-leads)
   - [Other contributors and reviewers](#other-contributors-and-reviewers)
   - [Major supporters and sponsors](#major-supporters-and-sponsors)
 - [Preface](#preface)
@@ -49,10 +49,10 @@ status: release
 
 Copyright © 2008–2024 The OWASP Foundation. このドキュメントは [Creative Commons Attribution-ShareAlike 4.0 International License](https://creativecommons.org/licenses/by-sa/4.0/) の下でリリースされています。再使用または配布する場合は、他者に対し本著作物のライセンス条項を明らかにする必要があります。
 
-### Project leads
+### プロジェクトリーダー <a name="project-leads"></a>
 
-- Vandana Verma Sehgal  
-- Elliot Ward  
+- Vandana Verma Sehgal
+- Elliot Ward
 
 ### Other contributors and reviewers
 
