@@ -1,20 +1,20 @@
 ---
 title: OWASP Large Language Model Security Verification Standard
-lang: en
+lang: ja
 version: '1.0'
 status: release
 ---
 
-# OWASP Large Language Model Security Verification Standard (LLMSVS)
+# OWASP 大規模言語モデルセキュリティ検証標準 (Large Language Model Security Verification Standard, LLMSVS)
 
-**Version:** 1.0 (English)  
-**Publication year:** 2024  
+**バージョン:** 1.0 (日本語)  
+**出版年:** 2024  
 
-This document is the Markdown edition of the OWASP LLMSVS English release. It contains the same technical content as the official PDF for version 0.1, organized for web rendering, version control, and derivative builds.
+このドキュメントは OWASP LLMSVS 日本語リリースのマークダウン版です。バージョン 0.1 の公式 PDF と同じ技術内容を含み、ウェブレンダリング、バージョン管理、派生ビルド向けに整理されています。
 
-## Table of contents
+## 目次
 
-- [Frontispiece](#frontispiece)
+- [扉](#frontispiece)
   - [About the standard](#about-the-standard)
   - [Copyright and license](#copyright-and-license)
   - [Project leads](#project-leads)
@@ -39,7 +39,7 @@ This document is the Markdown edition of the OWASP LLMSVS English release. It co
 
 ---
 
-## Frontispiece
+## 扉 <a name="frontispiece"></a>
 
 ### About the standard
 
