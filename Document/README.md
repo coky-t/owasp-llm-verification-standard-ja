@@ -13,15 +13,34 @@ OWASP 大規模言語モデルセキュリティ検証標準 (Large Language Mod
 
 **バグを見つけたり、アイデアがある場合、[issue を記録](https://github.com/OWASP/www-project-llm-verification-standard/issues) してください。その後、その issue のディスカッションに基づいて [プルリクエストを開く](https://github.com/OWASP/www-project-llm-verification-standard/pulls) ようにおねがいすることがあります。**
 
+## 分類 (Classification) と対象読者 (Audience)
+
+**分類 (Classification):** ドキュメント (Documentation)
+
+**対象読者 (Audience):**
+
+* 開発者 (Builders)
+* 解析者 (Breakers)
+* 保守者 (Defenders)
+
+## リポジトリとコミュニティ
+
+* [GitHub リポジトリ](https://github.com/OWASP/www-project-llm-verification-standard)
+* [Releases (changelog)](https://github.com/OWASP/www-project-llm-verification-standard/releases)
+* [OWASP Slack に参加する](https://owasp.org/slack/invite)
+* [Slack の #project-llmvs](https://owasp.slack.com/messages/C06MDJG0KBK)
+
 ## プロジェクトリーダーとワーキンググループ
 
 このプロジェクトは二人のプロジェクトリーダー [Vandana Verma Sehgal](https://github.com/vermava) と [Elliot Ward](https://github.com/mowzk) が主導しています。
 
-## 初期ドラフトバージョン - 0.1
+## 標準ドキュメント (マークダウン)
 
-最初の安定バージョンはバージョン 0.1 (2024 年 2 月付け) で、以下にあります。
+- **[LLMSVS v2.0 (日本語)](OWASP_Large_Language_Model_Security_Verification_Standard-v2.0_ja.md)** — 次期 2.0 リリースに向けた現行ドラフト。
 
-* [OWASP Large Language Model Security Verification Standard 0.1 English (PDF)](https://github.com/OWASP/www-project-llm-verification-standard/releases/tag/0.1)
+- **[LLMSVS v1.0 (日本語)](OWASP_Large_Language_Model_Security_Verification_Standard-v1.0_ja.md)** — 以前の **0.1** 公開トラック (2024 年 2 月) に適合するマークダウン版。コミュニティ PDF と同じ要件番号付けをしています。
+
+## バージョン 2.0 は 6 月 15 日にリリース予定
 
 このブランチのマスターブランチは常に "bleeding edge version" であり、進行中の変更や他の編集が開いているかもしれません。
 
