@@ -19,7 +19,7 @@ status: release
   - [著作権およびライセンス](#copyright-and-license)
   - [プロジェクトリーダー](#project-leads)
   - [他の貢献者およびレビュー担当者](#other-contributors-and-reviewers)
-  - [Major supporters and sponsors](#major-supporters-and-sponsors)
+  - [主なサポータおよびスポンサー](#major-supporters-and-sponsors)
 - [Preface](#preface)
 - [Utilizing the LLMSVS](#utilizing-the-llmsvs)
   - [Security verification layers](#security-verification-layers)
@@ -69,17 +69,17 @@ Copyright © 2008–2024 The OWASP Foundation. このドキュメントは [Crea
 
 大規模言語モデルセキュリティ検証標準は Snyk Security Labs チームが 2023 年に実施した LLM セキュリティに関する初期研究に基づいて構築されています。LLMSVS の概念、構造、定型、ツールの多くは OWASP ASVS プロジェクトから採用されています。OWASP ASVS にこれまで関わってこられた皆様に感謝します。
 
-### Major supporters and sponsors
+### 主なサポータおよびスポンサー <a name="major-supporters-and-sponsors"></a>
 
-This initiative would not have been possible without the support of our sponsors and the resources they have provided. We would like to express our gratitude to the following for their support.
+この取り組みはスポンサーの皆様の支援と提供されたリソースなくしては実現できませんでした。下記の皆様の支援に謝意を表します。
 
 #### Snyk
 
-The LLMSVS project was founded as a way to share knowledge gained from research into AI and LLM projects within the Snyk Security Labs team. We thank Snyk for the effort into eliciting the initial requirements and founding the project.
+LLMSVS プロジェクトは Snyk Security Labs チーム内での AI および LLM プロジェクトに関する研究から得られた知見を共有する方法として設立されました。初期要件の策定およびプロジェクトの設立に尽力した Snyk に感謝します。
 
 #### Lakera
 
-Lakera, a security company that empowers developers to confidently build secure Generative AI applications, reviewed and proofread an early draft of this standard, providing guidance based on their expertise with model lifecycle security and secure LLM integration.
+開発者が安全な生成 AI アプリケーションを自信を持って構築できるよう支援するセキュリティ企業 Lakera は、本標準の初期草案をレビューおよび校正し、モデルのライフサイクルセキュリティや安全な LLM 統合の専門知識に基づくガイダンスを提供しました。
 
 ---
 
