@@ -22,7 +22,7 @@ status: release
   - [主なサポータおよびスポンサー](#major-supporters-and-sponsors)
 - [序文](#preface)
 - [LLMSVS の活用](#utilizing-the-llmsvs)
-  - [Security verification layers](#security-verification-layers)
+  - [セキュリティ検証レイヤ](#security-verification-layers)
   - [Assumptions](#assumptions)
 - [Assessment and certification](#assessment-and-certification)
   - [OWASP’s stance on LLMSVS certifications and trust marks](#owasps-stance-on-llmsvs-certifications-and-trust-marks)
@@ -107,17 +107,17 @@ OWASP LLMSVS は主に以下の目的に仕えます。
 - **セキュリティチーム向けのフレームワーク:** LLM 搭載システムに対する要件の策定、セキュリティ監査のガイド、ペネトレーションテストの実施においてセキュリティチームを支援します。
 - **セキュリティベンチマークの整合:** セキュリティサービスプロバイダ、ベンダー、クライアントにセキュリティの期待に関する共通基盤を確立します。
 
-### Security verification layers
+### セキュリティ検証レイヤ <a name="security-verification-layers"></a>
 
-The LLMSVS categorizes security verification into three distinct levels, each tailored to different levels of security assurance:
+LLMSVS はセキュリティ検証を三つの異なるレベルに分類しており、それぞれが異なるレベルのセキュリティ保証に適合しています。
 
-1. **LLMSVS Level 1 — Basic security:** This level is aimed at applications with lower security risk and focuses on fundamental security controls for any LLM-powered system.
+1. **LLMSVS レベル 1 — 基本的なセキュリティ:** このレベルはセキュリティリスクが低めのアプリケーションを対象としており、あらゆる LLM 搭載システムの基本的なセキュリティコントロールに焦点を当てています。
 
-2. **LLMSVS Level 2 — Moderate security:** This level is ideal for applications handling sensitive data, offering a balanced approach to security that meets the needs of most applications. These applications may range from personal assistants, APIs processing customer data, or systems processing internal company data.
+2. **LLMSVS レベル 2 — 中程度のセキュリティ:** このレベルは機密データを扱うアプリケーションに最適であり、多くのアプリケーションのニーズを満たすバランスの取れたセキュリティアプローチを提供します。これらのアプリケーションには、パーソナルアシスタント、顧客データを処理する API、社内データを処理するシステムなどがあります。
 
-3. **LLMSVS Level 3 — High assurance security:** This level provides the most extensive security measures for the most critical applications involving sensitive data or high-value transactions. These applications may range from business critical applications that are essential for business operation, systems which handle financial transactions, or systems which fall under specific industry regulations such as those which process patient or healthcare data.
+3. **LLMSVS レベル 3 — 高保証のセキュリティ:** このレベルは、機密データや高価値取引を伴う極めて重要なアプリケーションに対して、最も広範なセキュリティ対策を提供します。これらのアプリケーションには、業務遂行に不可欠な基幹業務アプリケーション、金融取引を扱うシステム、患者データや医療データを処理するシステムなどの特定の業界規制に該当するシステムがあります。
 
-Each level of the LLMSVS provides a set of specific security requirements, mapping these to essential security features and practices necessary for building and operating robust LLM-powered applications. This approach equips developers, architects, and security professionals with practical and actionable guidelines. Whether building, enhancing, or evaluating the security of these applications, the LLMSVS provides a clear roadmap for all stakeholders involved in the life cycle of LLM-powered systems.
+LLMSVS の各レベルは一連の具体的なセキュリティ要件を提供し、それらを堅牢な LLM 搭載アプリケーションの構築と運用に必要なセキュリティ機能やプラクティスにマップしています。このアプローチは、開発者、アーキテクト、セキュリティ専門家に実践的かつ実行可能なガイドラインを身につけます。これらのアプリケーションのセキュリティを構築、強化、評価するいずれにおいても、LLMSVS は LLM 搭載システムのライフサイクルに関わるすべての利害関係者に明確なロードマップを提示します。
 
 ### Assumptions
 
