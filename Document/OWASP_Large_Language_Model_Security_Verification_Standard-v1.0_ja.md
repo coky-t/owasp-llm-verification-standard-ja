@@ -33,7 +33,7 @@ status: release
 - [V4. モデルのメモリとストレージ (Model memory and storage)](#v4-model-memory-and-storage)
 - [V5. 安全な LLM 統合 (Secure LLM integration)](#v5-secure-llm-integration)
 - [V6. エージェントとプラグイン (Agents and plugins)](#v6-agents-and-plugins)
-- [V7. Dependency and component](#v7-dependency-and-component)
+- [V7. 依存関係とコンポーネント (Dependency and component)](#v7-dependency-and-component)
 - [V8. Monitoring and anomaly detection](#v8-monitoring-and-anomaly-detection)
 - [Appendix A: Glossary](#appendix-a-glossary)
 
@@ -279,20 +279,20 @@ LLM システム内でのリアルタイム学習に関連するリスクを軽�
 
 ---
 
-## V7. Dependency and component
+## V7. 依存関係とコンポーネント (Dependency and component) <a name="v7-dependency-and-component"></a>
 
-### Control objective
+### 管理目標
 
-Ensure that third-party components and dependencies are safely handled to reduce supply chain risk.
+サプライチェーンリスクを軽減するために、サードパーティのコンポーネントや依存関係が安全に処理されることを確保します。
 
-| # | Requirement | L1 | L2 | L3 |
+| # | 要件        | L1 | L2 | L3 |
 | - | ----------- | -- | -- | -- |
-| 7.1 | Utilize Software Composition Analysis (SCA) tools to identify and remediate known vulnerabilities within third-party components used in LLM-powered applications. | | ✓ | ✓ |
-| 7.2 | Ensure that all third-party LLM components are acquired from a trusted source. | ✓ | ✓ | ✓ |
-| 7.3 | Ensure a defined vulnerability and patch management process exists for third-party components. | | ✓ | ✓ |
-| 7.4 | Ensure that a Software Bill of Materials (SBOM) exists cataloging third-party components, licenses, and versions. | | ✓ | ✓ |
-| 7.5 | Where unsafe PyTorch models are required, ensure the model is scanned for potentially dangerous Python imports. | | ✓ | ✓ |
-| 7.6 | When hosting LLM components within private package registries, ensure the setup is not susceptible to Dependency Confusion attacks. | | ✓ | ✓ |
+| 7.1 | ソフトウェア構成分析 (Software Composition Analysis, SCA) ツールを使用して、LLM を搭載したアプリケーションで使用されるサードパーティコンポーネント内の既知の脆弱性を特定して修正します。 | | ✓ | ✓ |
+| 7.2 | すべてのサードパーティ LLM コンポーネントが信頼できるソースから取得されることを確保します。 | ✓ | ✓ | ✓ |
+| 7.3 | サードパーティコンポーネントについて定義された脆弱性とパッチマネジメントプロセスが存在することを確保します。 | | ✓ | ✓ |
+| 7.4 | サードパーティコンポーネント、ライセンス、バージョンをカタログ化したソフトウェア部品表 (Software Bill of Materials, SBOM) が存在することを確保します。 | | ✓ | ✓ |
+| 7.5 | 安全でない PyTorch モデルが必要な場合は、危険な Python インポートがないか、モデルがスキャンされることを確保します。 | | ✓ | ✓ |
+| 7.6 | プライベートパッケージレジストリ内で LLM コンポーネントをホストする場合、そのセットアップが依存関係攪乱 (Dependency Confusion) 攻撃の影響を受けにくいことを確保します。 | | ✓ | ✓ |
 
 ---
 
