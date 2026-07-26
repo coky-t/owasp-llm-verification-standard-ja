@@ -20,7 +20,7 @@ status: set to release
   - [プロジェクトリーダー](#project-leads)
   - [主なサポータおよびスポンサー](#major-supporters-and-sponsors)
 - [序文](#preface)
-- [Utilizing the LLMSVS](#utilizing-the-llmsvs)
+- [LLMSVS の活用](#utilizing-the-llmsvs)
   - [Security verification layers](#security-verification-layers)
   - [Assumptions](#assumptions)
 - [Assessment and certification](#assessment-and-certification)
@@ -87,13 +87,13 @@ LLMSVS を開発して向上するために幅広いコミュニティに参加�
 
 ---
 
-## Utilizing the LLMSVS
+## LLMSVS の活用 <a name="utilizing-the-llmsvs"></a>
 
-The OWASP LLMSVS serves several key purposes:
+OWASP LLMSVS は主に以下の目的に仕えます。
 
-- **Assisting development teams:** guide teams in developing and maintaining secure LLM-powered applications.
-- **Framework for security teams:** assist security teams in setting requirements, guiding security audits, and conducting penetration tests against LLM-powered systems.
-- **Aligning security benchmarks:** establish a common ground for security service providers, vendors, and clients regarding security expectations.
+- **開発チームの支援:** セキュアな LLM 搭載アプリケーションを開発および保守するチームをガイドします。
+- **セキュリティチーム向けのフレームワーク:** LLM 搭載システムに対する要件の策定、セキュリティ監査のガイド、ペネトレーションテストの実施においてセキュリティチームを支援します。
+- **セキュリティベンチマークの整合:** セキュリティサービスプロバイダ、ベンダー、クライアントにセキュリティの期待に関する共通基盤を確立します。
 
 ### Security verification layers
 
