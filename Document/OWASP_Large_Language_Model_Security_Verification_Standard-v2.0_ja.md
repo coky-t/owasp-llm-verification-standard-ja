@@ -29,7 +29,7 @@ status: set to release
 - [V1. 安全な構成と保守 (Secure configuration and maintenance)](#v1-secure-configuration-and-maintenance)
 - [V2. モデルのライフサイクル (Model lifecycle)](#v2-model-lifecycle)
 - [V3. リアルタイム学習 (Real time learning)](#v3-real-time-learning)
-- [V4. Model memory and storage](#v4-model-memory-and-storage)
+- [V4. モデルのメモリとストレージ (Model memory and storage)](#v4-model-memory-and-storage)
 - [V5. Secure LLM integration](#v5-secure-llm-integration)
 - [V6. Agents and plugins](#v6-agents-and-plugins)
 - [V7. Dependency and component](#v7-dependency-and-component)
@@ -199,20 +199,20 @@ LLM システム内でのリアルタイム学習に関連するリスクを軽�
 
 ---
 
-## V4. Model memory and storage
+## V4. モデルのメモリとストレージ (Model memory and storage) <a name="v4-model-memory-and-storage"></a>
 
-### Control objective
+### 管理目標
 
-Ensure that mechanisms which allow for “memory” or additional knowledge that was not included in the training phase is safely handled.
+トレーニングフェーズでは含まれていない「記憶 (memory)」や追加知識を可能にするメカニズムが安全に取り扱われることを確保します。
 
-| # | Requirement | L1 | L2 | L3 |
+| # | 要件        | L1 | L2 | L3 |
 | - | ----------- | -- | -- | -- |
-| 4.1 | Ensure that mechanisms that implement “Conversational memory” do not mistakenly mix up prior prompts for other users. | ✓ | ✓ | ✓ |
-| 4.2 | Ensure that mechanisms which support “long-term” storage appropriately segregate user data to ensure it is not possible to retrieve data pertaining to other users, or inject false records for other users. | ✓ | ✓ | ✓ |
-| 4.3 | Ensure that controls exist to detect leakage of sensitive data from internal knowledge bases provided as additional context to the LLM. It should not be possible to coerce the LLM into leaking the contents of the knowledge base. | | ✓ | ✓ |
-| 4.4 | Ensure that external storage components such as vector databases and caches require authentication for consumers. | ✓ | ✓ | ✓ |
-| 4.5 | Enforce the principle of least privilege for accessing production storage components, such as vector databases and caches. | | ✓ | ✓ |
-| 4.6 | When updating embeddings within a knowledge base, ensure that an adversary is not able to inject arbitrary documents or otherwise insert false information into the knowledge base. | ✓ | ✓ | ✓ |
+| 4.1 | 「会話記憶 (Conversational memory)」を実装するメカニズムが他のユーザーに対する以前のプロンプトを誤って混同しないように確保します。 | ✓ | ✓ | ✓ |
+| 4.2 | 「長期 (long-term)」ストレージをサポートするメカニズムがユーザーデータを適切に分離して、他のユーザーに関するデータを取得したり、他のユーザーに虚偽の記録を注入したりできないようにすることを確保します。 | ✓ | ✓ | ✓ |
+| 4.3 | LLM への追加コンテキストとして提供される内部ナレッジベースからの機密データの漏洩を検出するためのコントロールが存在することを確保します。LLM にナレッジベースのコンテンツを漏洩するように強制することができないようにする必要があります。 | | ✓ | ✓ |
+| 4.4 | ベクターデータベースやキャッシュなどの外部ストレージコンポーネントがコンシューマの認証を必要とすることを確保します。 | ✓ | ✓ | ✓ |
+| 4.5 | ベクターデータベースやキャッシュなどのプロダクションストレージコンポーネントへのアクセスには最小権限の原則を強制します。 | | ✓ | ✓ |
+| 4.6 | ナレッジベース内の埋め込み (Embedding) を更新する際、敵対者がナレッジベースに任意のドキュメントを注入したり、虚偽の情報を挿入したりできないようにすることを確保します。 | ✓ | ✓ | ✓ |
 
 ---
 
