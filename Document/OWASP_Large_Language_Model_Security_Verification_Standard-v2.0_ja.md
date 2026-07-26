@@ -34,7 +34,7 @@ status: set to release
 - [V6. エージェントとプラグイン (Agents and plugins)](#v6-agents-and-plugins)
 - [V7. 依存関係とコンポーネント (Dependency and component)](#v7-dependency-and-component)
 - [V8. 監視と異常検出 (Monitoring and anomaly detection)](#v8-monitoring-and-anomaly-detection)
-- [Appendix A: Glossary](#appendix-a-glossary)
+- [付録 A: 用語集](#appendix-a-glossary)
 
 ---
 
@@ -297,28 +297,28 @@ LLM を搭載したアプリケーションの使用を継続的に監視して�
 
 ---
 
-## Appendix A: Glossary
+## 付録 A: 用語集 <a name="appendix-a-glossary"></a>
 
-- **Large Language Model (LLM)** — A type of artificial intelligence model designed to understand, generate, and interact with human language, based on vast amounts of text data. LLMs can perform a variety of language tasks like translation, summarization, and question answering.
+- **大規模言語モデル (Large Language Model, LLM)** — 膨大な量のテキストデータに基づき、人間の言語を理解、生成、対話するように設計された人工知能モデルの一種です。LLM は、翻訳、要約、質問への回答など、さまざまな言語タスクを実行できます。
 
-- **Prompt Injection** — A technique where an attacker intentionally crafts inputs (or “prompts”) to manipulate or exploit the behavior of an LLM. This can involve inserting misleading, biased, or malicious information in a prompt to influence the model’s output.
+- **プロンプトインジェクション (Prompt Injection)** — 攻撃者が LLM の挙動を操作または悪用するために、意図的に入力 (または「プロンプト」) を細工する技法です。これは、モデルの出力に影響を与えるために、誤解を招く情報、偏った情報、悪意のある情報をプロンプトに挿入することを含みます。
 
-- **LLM Agent** — A software entity or bot that utilizes a Large Language Model to perform tasks, answer queries, or interact in conversations, often designed to automate certain functions or provide user assistance.
+- **LLM エージェント (LLM Agent)** — 大規模言語モデルを活用して、タスクの実行、質問への回答、対話を行うソフトウェアエンティティまたはボットであり、特定機能を自動化したりユーザー支援を提供するように設計されることがよくあります。
 
-- **Model Poisoning** — A malicious attempt to influence or corrupt a machine learning model’s training data, causing it to learn incorrect, biased, or harmful behaviors.
+- **モデルポイズニング (Model Poisoning)** — 機械学習モデルのトレーニングデータに影響を与えたり、汚染するような悪意のある試みであり、誤った、偏った、あるいは有害な挙動を学習してしまいます。
 
-- **Natural Language Processing (NLP)** — The field of computer science and artificial intelligence focused on enabling computers to understand, interpret, and generate human language.
+- **自然言語処理 (Natural Language Processing, NLP)** — コンピュータが人間の言語を理解、解釈、生成できることに焦点を当てた、コンピュータサイエンスおよび人工知能の分野です。
 
-- **Transformer Architecture** — A neural network architecture used in many modern LLMs. It is known for its ability to handle sequential data and its effectiveness in tasks involving natural language.
+- **Transformer アーキテクチャ (Transformer Architecture)** — 多くの現行の LLM で使用されているニューラルネットワークアーキテクチャです。シーケンシャルデータを扱う能力や、自然減をに関連するタスクにおける有効性で知られています。
 
-- **Tokenization** — The process of converting text into smaller units (tokens), such as words, characters, or subwords, which can be used as input for language models.
+- **トークン化 (Tokenization)** — テキストを、言語モデルへの入力として使用できる、単語、文字、サブワードといったより小さな単位 (トークン) に変換するプロセスです。
 
-- **Fine-Tuning** — The process of taking a pre-trained model and further training it on a specific dataset to specialize it for particular tasks or domains.
+- **ファインチューニング (Fine-Tuning)** — 事前学習済みモデルを取得して、特定のデータセットでさらに学習するプロセスであり、特定のタスクやドメインに特化します。
 
-- **Data Privacy** — Concerns related to the handling, processing, and storage of sensitive or personal information by language models, especially when dealing with user inputs.
+- **データプライバシー (Data Privacy)** — 特にユーザー入力を扱う際、言語モデルによる機密情報や個人情報の取り扱い、処理、保存に関連する懸念事項です。
 
-- **Bias in AI** — The phenomenon where AI models, including LLMs, exhibit biased behavior, often as a result of biased training data or algorithms.
+- **AI のバイアス (Bias in AI)** — LLM を含む AI モデルが偏った挙動を示す現象であり、多くの場合、偏ったトレーニングデータやアルゴリズムに起因します。
 
-- **Adversarial Attack** — A strategy where attackers create inputs to deceive AI models into making errors. This is particularly concerning in security-sensitive applications of LLMs.
+- **敵対的攻撃 (Adversarial Attack)** — AI モデルを欺いて、誤りを犯すような入力を攻撃者が作成する策略です。これは LLM のセキュリティ上重要なアプリケーションで特に懸念となります。
 
-- **Principle of Least Privilege** — A security concept that involves granting users or systems the minimal level of access or permissions necessary to perform their tasks. This principle helps minimize potential damage from accidents or malicious attacks by limiting access rights for users to the bare minimum necessary to complete their duties.
+- **最小権限の原則 (Principle of Least Privilege)** — ユーザーやシステムに、タスクを実行するために必要な最小限のアクセスやパーミッションを付与するという、セキュリティ上の概念です。この原則は、ユーザーのアクセス権を職務を遂行するために必要な最小限に制限することで、事故や悪意のある攻撃からの潜在的な被害を最小限に抑えるのに役立ちます。
