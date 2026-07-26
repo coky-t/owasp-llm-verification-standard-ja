@@ -18,8 +18,8 @@ status: set to release
   - [本標準について](#about-the-standard)
   - [著作権およびライセンス](#copyright-and-license)
   - [プロジェクトリーダー](#project-leads)
-  - [他の貢献者およびレビュー担当者](#other-contributors-and-reviewers)
-- [Preface](#preface)
+  - [主なサポータおよびスポンサー](#major-supporters-and-sponsors)
+- [序文](#preface)
 - [Utilizing the LLMSVS](#utilizing-the-llmsvs)
   - [Security verification layers](#security-verification-layers)
   - [Assumptions](#assumptions)
@@ -71,19 +71,19 @@ LLMSVS プロジェクトは Snyk Security Labs チーム内での AI および 
 
 ---
 
-## Preface
+## 序文 <a name="preface"></a>
 
-Welcome to version 2.0 of the OWASP Large Language Model Security Verification Standard (LLMSVS), which provides a framework for evaluating the security of applications and systems that integrate Large Language Models (LLMs). This release builds on the initial 0.1 publication and subsequent community feedback.
+OWASP 大規模言語モデルセキュリティ検証標準 (Large Language Model Security Verification Standard, LLMSVS) のバージョン 2.0 へようこそ。これは大規模言語モデル (LLM) を統合したアプリケーションやシステムを評価するためのフレームワークを提供します。このリリースは初期の 0.1 の公開とその後のコミュニティフィードバックで構築しています。
 
-The LLMSVS aims to offer clear and practical guidelines that apply universally and assist developers, architects, security professionals, vendors, and researchers in securing LLM-powered systems.
+LLMSVS は、不変的に適用する明確で実践的なガイドラインを提供し、開発者、アーキテクト、セキュリティ専門家、ベンダー、研究者が LLM を活用したシステムを保護することを支援します。
 
-The LLMSVS is the result of a collaborative effort drawing on the expertise of professionals across various sectors. It addresses the unique security challenges presented by LLMs, focusing on functional and non-functional security aspects. This version continues to lay the foundation for an adapting set of guidelines shaped by ongoing feedback and the changing dynamics of LLMs, emerging Artificial Intelligence (AI) technologies, and advances in cybersecurity.
+LLMSVS はさまざまな分野にわたる専門家の知見を集めた共同作業の成果です。これは LLM によってもたらされる特有のセキュリティ課題に対処するものであり、機能的および非機能的なセキュリティの側面に焦点を当てています。このバージョンは、継続的なフィードバックや LLM の動態の変化、新たな人工知能 (Artificial Intelligence, AI) 技術、サイバーセキュリティの進歩によって形作られて適用していくガイドラインの基盤となり続けます。
 
-The standard will continue to evolve based on contributions from the community and advancements in the field. We recognize that there is no one-size-fits-all security solution, especially in a field as emergent as AI, and we anticipate the need for regular updates and refinements.
+この標準はコミュニティからの貢献と当該分野の進歩に基づいて進化し続けるでしょう。特に AI のような新興分野では、ワンサイズですべてにフィットするセキュリティソリューションは存在しないことを認識しており、定期的な更新と改良が必要になると見込んでいます。
 
-We invite the broader community to participate in developing and enhancing the LLMSVS. We value the diverse perspectives and expertise each participant brings to this project. Your feedback and contributions are crucial to ensuring the standard remains relevant and practical.
+LLMSVS を開発して向上するために幅広いコミュニティに参加していただくことを歓迎します。私たちは各参加者がこのプロジェクトにもたらす多様な視点と専門知識を高く評価しています。この標準が有意義かつ実用的であり続けるには、皆様のフィードバックや貢献が不可欠です。
 
-We’d like to thank the contributors for their valuable input and look forward to your continued support and involvement in developing the LLMSVS.
+貴重な意見を寄せていただいた貢献者の皆様に感謝するとともに、LLMSVS の開発での皆様の継続的な支援と関与を心待ちにしています。
 
 ---
 
