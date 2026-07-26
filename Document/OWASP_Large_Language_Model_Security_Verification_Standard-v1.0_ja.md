@@ -24,8 +24,8 @@ status: release
 - [LLMSVS の活用](#utilizing-the-llmsvs)
   - [セキュリティ検証レイヤ](#security-verification-layers)
   - [想定](#assumptions)
-- [Assessment and certification](#assessment-and-certification)
-  - [OWASP’s stance on LLMSVS certifications and trust marks](#owasps-stance-on-llmsvs-certifications-and-trust-marks)
+- [監査と認証](#assessment-and-certification)
+  - [LLMSVS 認証と認証マークに対する OWASP の見解](#owasps-stance-on-llmsvs-certifications-and-trust-marks)
   - [Guidance for certifying organizations](#guidance-for-certifying-organizations)
 - [V1. Secure configuration and maintenance](#v1-secure-configuration-and-maintenance)
 - [V2. Model lifecycle](#v2-model-lifecycle)
@@ -131,15 +131,15 @@ LLMSVS は LLM 搭載アプリケーションのセキュリティを強化す�
 
 ---
 
-## Assessment and certification
+## 監査と認証 <a name="assessment-and-certification"></a>
 
-### OWASP’s stance on LLMSVS certifications and trust marks
+### LLMSVS 認証と認証マークに対する OWASP の見解 <a name="owasps-stance-on-llmsvs-certifications-and-trust-marks"></a>
 
-OWASP, as a vendor-neutral not-for-profit organization, does not currently certify any vendors, verifiers or software.
+OWASP はベンダ中立の非営利組織であり、ベンダ、検証者、ソフトウェアの認証は行っていません。
 
-All such assurance assertions, trust marks, or certifications are not officially vetted, registered, or certified by OWASP, so an organization relying upon such a view needs to be cautious of the trust placed in any third party or trust mark claiming (LLM)SVS certification.
+こうした保証の表明、認証マーク、認証はいずれも OWASP によって公式に審査、登録、認証されたものではないため、そうした観点を信頼する組織は、(LLM)SVS 認証を謳う第三者や認証マークの信頼性に注意する必要があります。
 
-This should not inhibit organizations from offering such assurance services, as long as they do not claim official OWASP certification.
+OWASP の公式な認証であると主張しない限り、組織がこうした保証サービスを提供すること自体を妨げるものではありません。
 
 ### Guidance for certifying organizations
 
