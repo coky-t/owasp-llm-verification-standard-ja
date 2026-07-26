@@ -32,7 +32,7 @@ status: release
 - [V3. リアルタイム学習 (Real time learning)](#v3-real-time-learning)
 - [V4. モデルのメモリとストレージ (Model memory and storage)](#v4-model-memory-and-storage)
 - [V5. 安全な LLM 統合 (Secure LLM integration)](#v5-secure-llm-integration)
-- [V6. Agents and plugins](#v6-agents-and-plugins)
+- [V6. エージェントとプラグイン (Agents and plugins)](#v6-agents-and-plugins)
 - [V7. Dependency and component](#v7-dependency-and-component)
 - [V8. Monitoring and anomaly detection](#v8-monitoring-and-anomaly-detection)
 - [Appendix A: Glossary](#appendix-a-glossary)
@@ -256,26 +256,26 @@ LLM システム内でのリアルタイム学習に関連するリスクを軽�
 
 ---
 
-## V6. Agents and plugins
+## V6. エージェントとプラグイン (Agents and plugins) <a name="v6-agents-and-plugins"></a>
 
-### Control objective
+### 管理目標
 
-The autonomous nature of agent-based systems presents new risks and can increase the impact of attacks such as prompt injection. These controls aim to reduce the risk associated with autonomous LLM components to an acceptable level.
+エージェントベースのシステムの自律的な性質は新たなリスクをもたらし、プロンプトインジェクションなどの攻撃の影響を増大させる可能性があります。これらのコントロールは自律的な LLM コンポーネントに関連するリスクを許容可能なレベルまで軽減することを目的としています。
 
-| # | Requirement | L1 | L2 | L3 |
+| # | 要件        | L1 | L2 | L3 |
 | - | ----------- | -- | -- | -- |
-| 6.1 | Ensure that agent based solutions only expose access to the agent tools and plugins required for the current task. When multiple agent supported tasks exist, it should not be possible for a given task to leverage tools or plugins used by another task. | ✓ | ✓ | ✓ |
-| 6.2 | Ensure that custom plugins and agent tools follow existing SSDLC processes. | | ✓ | ✓ |
-| 6.3 | Ensure third-party plugins and toolkits are properly vetted according to existing Third-party risk management processes. | | ✓ | ✓ |
-| 6.4 | Ensure that the parameters for agent tools and plugins are validated prior to execution. Typical checks should include type checks at minimum, in addition to any more specific validation. | | ✓ | ✓ |
-| 6.5 | Ensure that credentials for third-party services consumed by agent tools and plugins are securely handled according to section V2.10 “Service Authentication” of the OWASP ASVS. | | ✓ | ✓ |
-| 6.6 | Ensure that agent and plugin frameworks contain hooks that allow the raw prompts and completions to be intercepted, enabling LLM guards to operate, and enabling proper monitoring, troubleshooting, and auditing. | | ✓ | ✓ |
-| 6.7 | Ensure that custom built plugins consider the scope of the currently authenticated principal. Plugins should not be able to access more than what the current principal is authorized to access. | | ✓ | ✓ |
-| 6.8 | Ensure that the host that executes agent tools and plugins is appropriately segregated from other internal components. Certain internal services might need to be queried, but firewall rules should enforce that unrelated services are not reachable. | | | ✓ |
-| 6.9 | Ensure that the host that executes agent tools and plugins is appropriately restricted from making arbitrary egress network requests. Only traffic for required APIs and services should be allowed to help increase the difficulty of data exfiltration from autonomous agents. | | | ✓ |
-| 6.10 | Ensure that API tokens for third-party services are scoped to the minimum required by the agent or plugin. For example, an agent designed to read messages from a specific Slack channel should not be able to read messages from other channels or post messages. | | ✓ | ✓ |
-| 6.11 | Consider manual approval, sometimes referred to as “human in the loop,” for sensitive operations before autonomous agents can continue execution. | | | ✓ |
-| 6.12 | Ensure that agents are executed in a sand-boxed ephemeral environment to reduce the risk of agent prompts which result in code execution due to software defects. | | | ✓ |
+| 6.1 | エージェントベースのソリューションが現在のタスクに必要なエージェントツールとプラグインへのアクセスのみを公開することを確保します。エージェントがサポートするタスクが複数存在する場合、特定のタスクが他のタスクで使用されているツールやプラグインを利用できないようにする必要があります。 | ✓ | ✓ | ✓ |
+| 6.2 | カスタムプラグインやエージェントツールが既存の SSDLC プロセスに従うことを確保します。 | | ✓ | ✓ |
+| 6.3 | サードパーティプラグインやツールキットが既存のサードパーティリスクマネジメントプロセスに従って適切に検査されることを確保します。 | | ✓ | ✓ |
+| 6.4 | エージェントツールやプラグインのパラメータが実行前に検証されることを確保します。一般的なチェックには最低でも型チェックを含み、さらにより具体的なバリデーションを含む必要があります。 | | ✓ | ✓ |
+| 6.5 | エージェントツールやプラグインによって使用されるサードパーティサービスのクレデンシャルが、OWASP ASVS のセクション V2.10 「サービス認証」に従って安全に処理されることを確保します。 | | ✓ | ✓ |
+| 6.6 | エージェントやプラグインのフレームワークが、未加工のプロンプトと完了時をインターセプトできるフックを含み、LLM ガードの動作を有効にし、適切な監視、トラブルシューティング、監査を有効にすることを確保します。 | | ✓ | ✓ |
+| 6.7 | カスタムビルドされたプラグインが現在認証されている原則の範囲を考慮することを確保します。プラグインは現在の原則がアクセスを認可しているもの以外にアクセスできるべきではありません。 | | ✓ | ✓ |
+| 6.8 | エージェントツールやプラグインを実行するホストが他の内部コンポーネントから適切に分離されることを確保します。特定の内部サービスをクエリする必要があるかもしれませんが、関係のないサービスに到達できないようにファイアウォールルールを適用します。 | | | ✓ |
+| 6.9 | エージェントツールやプラグインを実行するホストが任意の外向きネットワークリクエストを行うことが適切に制限されることを確保します。自立型エージェントからのデータ抽出の難易度を高めるために、必要な API とサービスのトラフィックのみを許可する必要があります。 | | | ✓ |
+| 6.10 | サードパーティサービスの API トークンがエージェントやプラグインに必要な最小限にスコープされることを確保します。たとえば、特定の Slack チャンネルからメッセージを読み取るように設計されたエージェントは、他のチャンネルからメッセージを読んだり、メッセージを投稿したりできないようにする必要があります。 | | ✓ | ✓ |
+| 6.11 | 自立型エージェントが実行を続行できるようになる前に、センシティブな操作について「ヒューマンインザループ (human in the loop)」とよばれる手動承認を検討します。 | | | ✓ |
+| 6.12 | ソフトウェアの欠陥によるコード実行につながるエージェントプロンプトのリスクを軽減するために、エージェントがサンドボックス化された一時的な環境で実行されることを確保します。 | | | ✓ |
 
 ---
 
