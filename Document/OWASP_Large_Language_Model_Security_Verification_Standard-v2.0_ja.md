@@ -26,7 +26,7 @@ status: set to release
 - [監査と認証](#assessment-and-certification)
   - [LLMSVS 認証と認証マークに対する OWASP の見解](#owasps-stance-on-llmsvs-certifications-and-trust-marks)
   - [認証機関のためのガイダンス](#guidance-for-certifying-organizations)
-- [V1. Secure configuration and maintenance](#v1-secure-configuration-and-maintenance)
+- [V1. 安全な構成と保守 (Secure configuration and maintenance)](#v1-secure-configuration-and-maintenance)
 - [V2. Model lifecycle](#v2-model-lifecycle)
 - [V3. Real time learning](#v3-real-time-learning)
 - [V4. Model memory and storage](#v4-model-memory-and-storage)
@@ -139,18 +139,18 @@ LLMSVS は LLM の使用および統合に関連するセキュリティ要件�
 
 ---
 
-## V1. Secure configuration and maintenance
+## V1. 安全な構成と保守 (Secure configuration and maintenance) <a name="v1-secure-configuration-and-maintenance"></a>
 
-### Control objective
+### 管理目標
 
-Ensure that LLMs, hosted by a model provider or self-hosted, are configured and maintained securely to prevent unauthorized access and leakage of sensitive information.
+モデルプロバイダにホストされている LLM やセルフホストされている LLM が、不正アクセスや機密情報の漏洩を防ぐために、安全に構成および保守されていることを確保します。
 
-| # | Requirement | L1 | L2 | L3 |
+| # | 要件        | L1 | L2 | L3 |
 | - | ----------- | -- | -- | -- |
-| 1.1 | Identify any components that store secrets, like API keys, for third-party systems, like hosted LLMs and vector databases, and ensure the secure handling of these credentials according to section V2.10 “Service Authentication” of the OWASP ASVS. | | ✓ | ✓ |
-| 1.2 | For self-hosted LLMs, ensure they are appropriately segregated within the network to prevent direct exposure to end-users unless such access is required. | | ✓ | ✓ |
-| 1.3 | Maintain an up-to-date inventory of all LLM instances and apply regular updates and patches to self-hosted models. | | | ✓ |
-| 1.4 | Perform and document regular configuration reviews for configuration settings associated with the LLM-powered system. | | | ✓ |
+| 1.1 | ホストされている LLM やベクターデータベースなどのサードパーティシステムの API キーなどのシークレットを保存するコンポーネントを特定し、OWASP ASVS のセクション V2.10 「サービス認証」に従って、これらのクレデンシャルを安全に処理することを確保します。 | | ✓ | ✓ |
+| 1.2 | セルフホストされている LLM の場合、そのようなアクセスが必要でない限り、エンドユーザーに直接公開されることを防ぐために、ネットワーク内で適切に分割されていることを確保します。 | | ✓ | ✓ |
+| 1.3 | すべての LLM インスタンスの最新のインベントリを維持し、セルフホストされているモデルに定期的なアップデートとパッチを適用します。 | | | ✓ |
+| 1.4 | LLM を搭載したシステムに関連する構成設定について定期的な構成レビューを実施して文書化します。 | | | ✓ |
 
 ---
 
