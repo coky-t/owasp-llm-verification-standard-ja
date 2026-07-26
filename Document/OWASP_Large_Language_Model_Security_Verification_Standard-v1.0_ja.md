@@ -34,7 +34,7 @@ status: release
 - [V5. 安全な LLM 統合 (Secure LLM integration)](#v5-secure-llm-integration)
 - [V6. エージェントとプラグイン (Agents and plugins)](#v6-agents-and-plugins)
 - [V7. 依存関係とコンポーネント (Dependency and component)](#v7-dependency-and-component)
-- [V8. Monitoring and anomaly detection](#v8-monitoring-and-anomaly-detection)
+- [V8. 監視と異常検出 (Monitoring and anomaly detection)](#v8-monitoring-and-anomaly-detection)
 - [Appendix A: Glossary](#appendix-a-glossary)
 
 ---
@@ -296,16 +296,16 @@ LLM システム内でのリアルタイム学習に関連するリスクを軽�
 
 ---
 
-## V8. Monitoring and anomaly detection
+## V8. 監視と異常検出 (Monitoring and anomaly detection) <a name="v8-monitoring-and-anomaly-detection"></a>
 
-### Control objective
+### 管理目標
 
-Continuously monitor the use of LLM-powered applications to detect anomalous behavior or outputs that could indicate security incidents or system misuse.
+LLM を搭載したアプリケーションの使用を継続的に監視して、セキュリティインシデントやシステムの悪用を示す可能性がある異常な振る舞いや出力を検出します。
 
-| # | Requirement | L1 | L2 | L3 |
+| # | 要件        | L1 | L2 | L3 |
 | - | ----------- | -- | -- | -- |
-| 8.1 | Continuously monitor the usage patterns of LLM applications for anomalies that could indicate security incidents, such as unexpected spikes in usage or deviations from typical output patterns. | | ✓ | ✓ |
-| 8.2 | Establish logging and alerting mechanisms for events that could suggest prompt leaks, such as the appearance of canary tokens (see 5.7) in logs or unexpected language patterns. | | ✓ | ✓ |
+| 8.1 | 使用量の予期しない急増や典型的な出力パターンからの逸脱など、セキュリティインシデントを示す可能性のある異常がないかどうか、LLM アプリケーションの使用パターンを継続的に監視します。 | | ✓ | ✓ |
+| 8.2 | ログ内のカナリアトークン (5.7 を参照) や予期しない言語パターンの出現など、プロンプト漏洩を示唆する可能性があるイベントのログ記録とアラートのメカニズムを確立します。 | | ✓ | ✓ |
 
 ---
 
