@@ -28,7 +28,7 @@ status: release
   - [LLMSVS 認証と認証マークに対する OWASP の見解](#owasps-stance-on-llmsvs-certifications-and-trust-marks)
   - [認証機関のためのガイダンス](#guidance-for-certifying-organizations)
 - [V1. 安全な構成と保守 (Secure configuration and maintenance)](#v1-secure-configuration-and-maintenance)
-- [V2. Model lifecycle](#v2-model-lifecycle)
+- [V2. モデルのライフサイクル (Model lifecycle)](#v2-model-lifecycle)
 - [V3. Real time learning](#v3-real-time-learning)
 - [V4. Model memory and storage](#v4-model-memory-and-storage)
 - [V5. Secure LLM integration](#v5-secure-llm-integration)
@@ -166,32 +166,32 @@ LLMSVS は LLM の使用および統合に関連するセキュリティ要件�
 
 ---
 
-## V2. Model lifecycle
+## V2. モデルのライフサイクル (Model lifecycle) <a name="v2-model-lifecycle"></a>
 
-### Control objective
+### 管理目標
 
-Ensure that the Machine Learning (ML) lifecycle for models used within LLM-powered systems considers the various security threats from dataset curation, model training, and validation.
+LLM を搭載したシステム内で使用されるモデルの機械学習 (Machine Learning, ML) が、データセットのキュレーション、モデルのトレーニング、バリデーションによるさまざまなセキュリティ脅威を考慮していることを確保します。
 
-| # | Requirement | L1 | L2 | L3 |
+| # | 要件        | L1 | L2 | L3 |
 | - | ----------- | -- | -- | -- |
-| 2.1 | Ensure that the lifecycle of machine learning models is integrated into the existing Secure Software Development Lifecycle (SSDLC). Defined processes should exist and be available for each stage of the lifecycle of ML models. | | ✓ | ✓ |
-| 2.2 | Document user stories defining the requirements and use cases for any new ML model being produced. | | ✓ | ✓ |
-| 2.3 | Ensure that model training resources and datasets are acquired from trustworthy sources and validated for correctness or free from malicious data. | ✓ | ✓ | ✓ |
-| 2.4 | Ensure that model training resources and datasets are properly secured from unauthorized modification once acquired. | | ✓ | ✓ |
-| 2.5 | Ensure that the source of any training resources and datasets is documented. | | | ✓ |
-| 2.6 | Ensure that any data cleaning or other modifications to the original training resources are tracked and auditable to reduce the risk of data poisoning from an insider threat. | | | ✓ |
-| 2.7 | Ensure that the intellectual property rights of model training resources and datasets are checked to avoid potential license or copyright infringement issues. Ensure this process is documented and auditable. | ✓ | ✓ | ✓ |
-| 2.8 | Ensure that model training resources are audited for sensitive data (such as PII, internal company data, etc.) and cleaned before training to mitigate sensitive data exposure in model responses. | | ✓ | ✓ |
-| 2.9 | Ensure secure acquisition and storage of foundational or pre-trained models. | ✓ | ✓ | ✓ |
-| 2.10 | Where possible, prefer secure model formats such as SafeTensors over formats that use unsafe serialization, like PyTorch’s Pickle format. | ✓ | ✓ | ✓ |
-| 2.11 | Ensure that foundational models are fine-tuned to limit irrelevant data points which may lead to poor model performance. | | ✓ | ✓ |
-| 2.12 | Check regulatory obligations to ensure compliance when handling and processing model training data. | | ✓ | ✓ |
-| 2.13 | Ensure that a ML Bill-of-Materials (BOM) is produced for each model. | | | ✓ |
-| 2.14 | Consider watermarking techniques for model responses when model theft is a concern, or the output of the model needs to be identifiable. | | | ✓ |
-| 2.15 | Ensure tooling to detect biases and ensure fairness are integrated into the ML models lifecycle. | | ✓ | ✓ |
-| 2.16 | Ensure security tooling to detect LLM vulnerabilities such as injection attacks, jailbreak attempts and other abuse are integrated into the ML models lifecycle. | | ✓ | ✓ |
-| 2.17 | Before a model is finalized for deployment, conduct a thorough risk assessment to understand potential security, ethical, and operational risks. This assessment should guide the decision-making process regarding the deployment of the model. | | | ✓ |
-| 2.18 | Ensure there is a clear plan for decommissioning models that are no longer in use. This includes securely erasing data, model parameters, and any sensitive information associated with the model to prevent unauthorized access or misuse. | | | ✓ |
+| 2.1 | 機械学習モデルのライフサイクルが既存のセキュアソフトウェア開発ライフサイクル (Secure Software Development Lifecycle, SSDLC) に統合されるように確保します。定義されたプロセスが存在し、ML モデルのライフサイクルの各ステージにおいて利用できる必要があります。 | | ✓ | ✓ |
+| 2.2 | 新しく作成される ML モデルの要件とユースケースを定義するユーザーストーリーを文書化します。 | | ✓ | ✓ |
+| 2.3 | モデルのトレーニングリソースとデータセットが信頼できるソースから取得され、正確性を検証しているか、悪意のあるデータがないことを確保します。 | ✓ | ✓ | ✓ |
+| 2.4 | モデルのトレーニングリソースとデータセットが取得後に不正な変更から適切に保護されていることを確保します。 | | ✓ | ✓ |
+| 2.5 | トレーニングリソースとデータセットのソースが文書化されていることを確保します。 | | | ✓ |
+| 2.6 | 内部脅威によるデータポイズニングのリスクを軽減するために、オリジナルのトレーニングリソースに対するデータクリーニングやその他の変更が追跡され、監査可能であることを確保します。 | | | ✓ |
+| 2.7 | 潜在的なライセンスや著作権侵害の問題を回避するために、モデルのトレーニングリソースとデータセットの知的財産権をチェックしていることを確保します。このプロセスが文書化され、監査可能であることを確保します。 | ✓ | ✓ | ✓ |
+| 2.8 | モデルのトレーニングリソースが機密データ (個人情報、社内データなど) について監査され、モデルのレスポンスにおける機密データの露出を軽減するために、トレーニング前にクリーニングされていることを確保します。 | | ✓ | ✓ |
+| 2.9 | 基本モデルや事前トレーニング済みモデルの安全な取得と保管を確保します。 | ✓ | ✓ | ✓ |
+| 2.10 | 可能であれば、PyTorch の Pickle 形式などの安全でないシリアライゼーションを使用する形式よりも SafeTensors などの安全なモデル形式を選択します。 | ✓ | ✓ | ✓ |
+| 2.11 | モデルのパフォーマンス低下につながる可能性のある無関係なデータポイントを制限するために、基本モデルをファインチューニングされることを確保します。 | | ✓ | ✓ |
+| 2.12 | モデルのトレーニングデータを取扱いおよび処理する際のコンプライアンスを確保するための規制上の義務を確認します。 | | ✓ | ✓ |
+| 2.13 | ML 部品表 (Bill-of-Materials, BOM) がモデルごとに作成されることを確保します。 | | | ✓ |
+| 2.14 | モデル窃取が懸念される場合やモデルの出力を識別可能にする必要がある場合は、モデルレスポンスの電子透かし技法を検討します。 | | | ✓ |
+| 2.15 | バイアスを検出し、公平性を確保するためのツールが ML モデルのライフサイクルに統合されていることを確保します。 | | ✓ | ✓ |
+| 2.16 | インジェクション攻撃、脱獄の試み、その他の悪用などの LLM の脆弱性を検出するセキュリティツールが ML モデルのライフサイクルに統合されていることを確保します。 | | ✓ | ✓ |
+| 2.17 | モデルがデプロイメントを完了する前に、徹底的なリスク評価を実施して、潜在的なセキュリティリスク、倫理リスク、運用リスクを把握します。この評価はモデルのデプロイメントに関する意思決定のプロセスの指針となります。 | | | ✓ |
+| 2.18 | 使用されなくなったモデルを廃止するための明確な計画があることを確保します。これは、不正アクセスや悪用を防ぐために、データ、モデルパラメータ、モデルに関連する機密情報を安全に消去することを含みます。 | | | ✓ |
 
 ---
 
