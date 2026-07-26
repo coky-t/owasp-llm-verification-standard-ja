@@ -29,7 +29,7 @@ status: release
   - [認証機関のためのガイダンス](#guidance-for-certifying-organizations)
 - [V1. 安全な構成と保守 (Secure configuration and maintenance)](#v1-secure-configuration-and-maintenance)
 - [V2. モデルのライフサイクル (Model lifecycle)](#v2-model-lifecycle)
-- [V3. Real time learning](#v3-real-time-learning)
+- [V3. リアルタイム学習 (Real time learning)](#v3-real-time-learning)
 - [V4. Model memory and storage](#v4-model-memory-and-storage)
 - [V5. Secure LLM integration](#v5-secure-llm-integration)
 - [V6. Agents and plugins](#v6-agents-and-plugins)
@@ -195,19 +195,19 @@ LLM を搭載したシステム内で使用されるモデルの機械学習 (Ma
 
 ---
 
-## V3. Real time learning
+## V3. リアルタイム学習 (Real time learning) <a name="v3-real-time-learning"></a>
 
-### Control objective
+### 管理目標
 
-Establish controls to reduce the risks associated with real time learning within LLM systems, where the models are continuously fine-tuned based on user interactions in real time.
+LLM システム内でのリアルタイム学習に関連するリスクを軽減するためのコントロールを確立します。ここでは、リアルタイムでのユーザーインタラクションに基づいてモデルを継続的にファインチューニングします。
 
-| # | Requirement | L1 | L2 | L3 |
+| # | 要件        | L1 | L2 | L3 |
 | - | ----------- | -- | -- | -- |
-| 3.1 | Define clear terms of use and guidelines for interacting with the model and make users aware of acceptable and unacceptable behaviors. | ✓ | ✓ | ✓ |
-| 3.2 | Ensure continuous monitoring of the model’s performance and interactions. This includes logging all inputs and outputs (where appropriate, with consideration to the potential sensitivity of the data) in real time to quickly identify and address any inappropriate or unexpected behavior. | | ✓ | ✓ |
-| 3.3 | Create clear protocols for immediate intervention in case the model starts displaying undesirable behavior. This should include the ability to quickly take the system offline if necessary. | | | ✓ |
-| 3.4 | Regularly analyze user interactions to identify and mitigate attempts to manipulate the model into inappropriate behavior. | | | ✓ |
-| 3.5 | Consider using an incremental learning approach where the model can be updated in increments with human approval. | | | ✓ |
+| 3.1 | モデルとインタラクションするための明確な使用条件とガイドラインを定義し、許容できる振る舞いと許容できない振る舞いをユーザーに認識させます。 | ✓ | ✓ | ✓ |
+| 3.2 | モデルのパフォーマンスとインタラクションの継続的な監視を確保します。これには、すべての入力と出力を (必要に応じて、データの潜在的な機密性を考慮して) リアルタイムでログ記録し、不適切な振る舞いと予期しない振る舞いを迅速に特定して対処することが含まれます。 | | ✓ | ✓ |
+| 3.3 | モデルが望ましくない振る舞いを示し始めた場合に即座に介入するための明確なプロトコルを作成します。これには必要に応じてシステムを迅速にオフラインにする機能を含める必要があります。 | | | ✓ |
+| 3.4 | ユーザーインタラクションを定期的に分析して、モデルを不適切な振る舞いに操作しようとする試みを特定して軽減します。 | | | ✓ |
+| 3.5 | 人間の承認を得てモデルを段階的に更新できる増分学習アプローチの使用を検討します。 | | | ✓ |
 
 ---
 
