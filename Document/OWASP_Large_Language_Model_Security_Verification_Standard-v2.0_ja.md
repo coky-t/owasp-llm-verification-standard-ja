@@ -30,7 +30,7 @@ status: set to release
 - [V2. モデルのライフサイクル (Model lifecycle)](#v2-model-lifecycle)
 - [V3. リアルタイム学習 (Real time learning)](#v3-real-time-learning)
 - [V4. モデルのメモリとストレージ (Model memory and storage)](#v4-model-memory-and-storage)
-- [V5. Secure LLM integration](#v5-secure-llm-integration)
+- [V5. 安全な LLM 統合 (Secure LLM integration)](#v5-secure-llm-integration)
 - [V6. Agents and plugins](#v6-agents-and-plugins)
 - [V7. Dependency and component](#v7-dependency-and-component)
 - [V8. Monitoring and anomaly detection](#v8-monitoring-and-anomaly-detection)
@@ -216,31 +216,31 @@ LLM システム内でのリアルタイム学習に関連するリスクを軽�
 
 ---
 
-## V5. Secure LLM integration
+## V5. 安全な LLM 統合 (Secure LLM integration) <a name="v5-secure-llm-integration"></a>
 
-### Control objective
+### 管理目標
 
-Establish controls that enable safe interactions and operations between application components and LLMs.
+アプリケーションコンポーネントと LLM との間の安全なインタラクションとオペレーションを可能にするコントロールを確立します。
 
-| # | Requirement | L1 | L2 | L3 |
+| # | 要件        | L1 | L2 | L3 |
 | - | ----------- | -- | -- | -- |
-| 5.1 | Ensure that prompts to LLMs are issued from a trusted server-side component. | ✓ | ✓ | ✓ |
-| 5.2 | Ensure that prompts to LLMs are constructed server-side, rather than accepting the complete prompt directly from the client. | ✓ | ✓ | ✓ |
-| 5.3 | Consider the use of redundant LLM accounts and providers to avoid single points of failure and ensure application availability. | | | ✓ |
-| 5.4 | Ensure that credentials for LLM providers are securely handled according to section V2.10 “Service Authentication” of the OWASP ASVS. | | ✓ | ✓ |
-| 5.5 | Ensure that the output format and properties of the data returned from the LLM match the expected structure and properties. Specifically, when a response is expected in JSON, the result should not only be in valid JSON format, but also undergo schema validation to ensure it contains all the expected JSON fields and does not include any unnecessary or extraneous properties. | ✓ | ✓ | ✓ |
-| 5.6 | Ensure that the output language of the LLM response matches the expected language. | | ✓ | ✓ |
-| 5.7 | Consider using canary tokens in LLM prompts and check whether LLM completions contain the canary word to detect prompt leakage attacks. | | | ✓ |
-| 5.8 | Check the entropy of LLM responses to detect encoded data which aims to circumvent additional checks, such as bypassing canary tokens. | | | ✓ |
-| 5.9 | Perform length checks on LLM completions to verify that the response length is within an expected range. For example, a response that is significantly longer than the normal output length might indicate the completion is including additional, unexpected data. | | | ✓ |
-| 5.10 | Ensure that the application properly suppresses any exceptions and error messages when interacting with the LLM. LLM errors may inadvertently leak the prompt and should not be visible to the client. | ✓ | ✓ | ✓ |
-| 5.11 | Ensure that appropriate LLM guards are used to scan prompts and compilations to help detect potential prompt injection attacks. | | ✓ | ✓ |
-| 5.12 | Ensure that all prompts are considered to be untrusted and subjected to any deployed security controls. Reflecting stored data, data from third-party APIs, or the response from previous prompt compilations may lead to indirect prompt injections and must be subjected to the same controls as prompts containing direct user input. | | ✓ | ✓ |
-| 5.13 | Ensure that the output of LLM completions is considered to be untrusted by any subsequent system. For example, if using the LLM response within a SQL query, the query should not be constructed by concatenating parts of the LLM response but should follow section V5.3.4 of the OWASP ASVS and use parameterized queries. | ✓ | ✓ | ✓ |
-| 5.14 | Ensure that systems that result in LLM calls have appropriate API rate limiting to avoid excessive calls to LLMs, which may result in unexpected and excessive LLM costs. | | ✓ | ✓ |
-| 5.15 | Ensure that cost alerts are active within LLM provider configurations to be alerted when costs exceed expectations. | ✓ | ✓ | ✓ |
-| 5.16 | Define baselines for normal LLM interactions and monitor and alert when abnormal LLM interactions are detected. | | | ✓ |
-| 5.17 | Ensure any functionality that allows anonymous users to preview features is properly restricted to allow only the necessary features. | | ✓ | ✓ |
+| 5.1 | LLM へのプロンプトが信頼できるサーバーサイドコンポーネントから発行されることを確保します。 | ✓ | ✓ | ✓ |
+| 5.2 | LLM へのプロンプトが、クライアントから直接完全なプロンプトを受け付けるのではなく、サーバーサイドで構築されることを確保します。 | ✓ | ✓ | ✓ |
+| 5.3 | 冗長 LLM アカウントとプロバイダの使用を検討して、単一障害点を回避し、アプリケーションの可用性を確保します。 | | | ✓ |
+| 5.4 | LLM プロバイダのクレデンシャルが OWASP ASVS のセクション V2.10 「サービス認証」に従って安全に処理されることを確保します。 | | ✓ | ✓ |
+| 5.5 | LLM から返される出力形式とプロパティが期待される構造とプロパティに一致していることを確保します。特に、レスポンスが JSON で期待される場合、その結果が有効な JSON 形式であるだけでなく、スキーマバリデーションを受けて、期待されるすべての JSON フィールドを含むこと、および不要なプロパティや余計なプロパティを含まないことを確保する必要があります。 | ✓ | ✓ | ✓ |
+| 5.6 | LLM レスポンスの出力言語が期待される言語と一致することを確保します。 | | ✓ | ✓ |
+| 5.7 | LLM プロンプトにカナリアトークンを使用して、LLM 完了時にカナリアワードを含むかどうかをチェックし、プロンプト漏洩攻撃を検出することを検討します。 | | | ✓ |
+| 5.8 | LLM レスポンスのエントロピーをチェックして、カナリアトークンをバイパスするなどの追加チェックを回避することを目的としたエンコードされたデータを検出します。 | | | ✓ |
+| 5.9 | LLM 完了時に長さチェックを実行して、レスポンスの長さが期待された範囲内であることを検証します。たとえば、通常の出力の長さより大幅に長いレスポンスは、完了時に追加の予期しないデータを含んでいることを示している可能性があります。 | | | ✓ |
+| 5.10 | アプリケーションが LLM とインタラクションする際に例外やエラーメッセージを適切に抑制することを確保します。LLM エラーは不注意にプロンプトを漏洩する可能性があり、クライアントには見えないようにする必要があります。 | ✓ | ✓ | ✓ |
+| 5.11 | 適切な LLM ガードを使用して、プロンプトとコンピレーションをスキャンし、潜在的なプロンプトインジェクション攻撃の検出に役立つことを確保します。 | | ✓ | ✓ |
+| 5.12 | すべてのプロンプトが信頼できないものとみなされ、デプロイされているセキュリティコントロールの対象となることを確保します。保存されたデータ、サードパーティ API からのデータ、以前のプロンプト完了時からのレスポンスを反映すると、間接的なプロンプトインジェクションにつながる可能性があるため、ユーザーからの直接入力を含むプロンプトと同じコントロールの対象としなければなりません。 | | ✓ | ✓ |
+| 5.13 | LLM 完了時の出力が後続のシステムによって信頼できないとみなされることを確保します。たとえば、SQL クエリ内で LLM レスポンスを使用する場合、クエリは LLM レスポンスのパーツを連結して構築すべきではなく、OWASP ASVS のセクション V5.3.4 に従い、パラメータ化されたクエリを使用する必要があります。 | ✓ | ✓ | ✓ |
+| 5.14 | LLM の呼び出しを行うシステムに適切な API レート制限があり、予期しない過剰な LLM コストが発生する可能性がある LLM への過剰な呼び出しを回避することを確保します。 | | ✓ | ✓ |
+| 5.15 | LLM プロバイダ構成内でコストアラートがアクティブであり、コストが予想を上回った場合にアラートされることを確保します。 | ✓ | ✓ | ✓ |
+| 5.16 | 正常な LLM インタラクションのベースラインを定義して監視し、異常な LLM インタラクションが検出された際にアラートします。 | | | ✓ |
+| 5.17 | 匿名ユーザーが特性をプレビューできる機能が、必要な特性のみを許可するよう適切に制限されることを確保します。 | | ✓ | ✓ |
 
 ---
 
