@@ -25,7 +25,7 @@ status: set to release
   - [想定](#assumptions)
 - [監査と認証](#assessment-and-certification)
   - [LLMSVS 認証と認証マークに対する OWASP の見解](#owasps-stance-on-llmsvs-certifications-and-trust-marks)
-  - [Guidance for certifying organizations](#guidance-for-certifying-organizations)
+  - [認証機関のためのガイダンス](#guidance-for-certifying-organizations)
 - [V1. Secure configuration and maintenance](#v1-secure-configuration-and-maintenance)
 - [V2. Model lifecycle](#v2-model-lifecycle)
 - [V3. Real time learning](#v3-real-time-learning)
@@ -129,13 +129,13 @@ OWASP はベンダ中立の非営利組織であり、ベンダ、検証者、�
 
 これは、OWASP の公式な認証であると主張しない限り、組織がこうした保証サービスを提供することを妨げるものではありません。
 
-### Guidance for certifying organizations
+### 認証機関のためのガイダンス <a name="guidance-for-certifying-organizations"></a>
 
-For Large Language Model Security Verification Standard (LLMSVS) compliance, an “open book” review is recommended, granting assessors access to essential resources such as system architects, developers, project documentation, source code, and authenticated interfaces, including access to at least one account for each user role.
+大規模言語モデルセキュリティ検証標準 (Large Language Model Security Verification Standard, LLMSVS) への準拠には、「オープンブック」レビューが推奨されます。システムアーキテクト、開発者、プロジェクトドキュメント、ソースコード、認証済みインタフェース (各ユーザーロールについて少なくとも一つのアカウントへのアクセスを含む) といった重要なリソースへのアクセスを、評価者に許可します。
 
-It is important to note that the LLMSVS only covers the security requirements pertaining to LLM usage and integration. It does not cover general application security controls (for example web services) which are not specific to an LLM-powered system. Any additional systems and non-LLM properties should be verified against appropriate standards, such as the [OWASP ASVS](https://owasp.org/www-project-application-security-verification-standard/).
+LLMSVS は LLM の使用および統合に関連するセキュリティ要件のみをカバーしていることに留意することが重要です。LLM 搭載システムに特有ではない一般的なアプリケーションセキュリティコントロール (ウェブサービスなど) をカバーしていません。その他のシステムや非 LLM 属性については、[OWASP ASVS](https://owasp.org/www-project-application-security-verification-standard/) などの適切な標準に基づいて検証を行う必要があります。
 
-Certification reports should clearly define the verification scope, particularly noting any exclusions, and summarize findings with details on both passed and failed tests, including guidance for addressing failures. Industry-standard practice requires detailed documentation of the verification process, including work papers, screenshots, scripts for issue replication, and electronic testing records such as proxy logs. Automated tool results alone are insufficient; documentation must provide conclusive evidence of thorough and rigorous testing of all controls. In case of disputes, sufficient evidence should be present to verify that each verified control has indeed been tested.
+認証レポートには、検証範囲を明確に定義し、特に除外を注記し、合格および不合格となったテストの両方について、結果の詳細と、不合格事項への対処についてのガイダンスを含めて、まとめる必要があります。業界標準の慣行として、検証プロセスの詳細なドキュメントを求められます。これには、作業記録、スクリーンショット、問題再現用スクリプト、プロキシログなどの電子的なテスト記録を含みます。自動化ツールの結果だけでは不十分であり、すべてのコントロールに対して徹底的かつ厳格なテストを裏付ける決定的な証拠をドキュメントで提示しなければなりません。異議申し立てがあった場合に、それぞれの検証コントロールが実際にテストされたことを実証するのに十分な証跡が必要となります。
 
 ---
 
