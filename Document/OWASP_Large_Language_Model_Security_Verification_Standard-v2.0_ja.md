@@ -22,7 +22,7 @@ status: set to release
 - [序文](#preface)
 - [LLMSVS の活用](#utilizing-the-llmsvs)
   - [セキュリティ検証レイヤ](#security-verification-layers)
-  - [Assumptions](#assumptions)
+  - [想定](#assumptions)
 - [Assessment and certification](#assessment-and-certification)
   - [OWASP’s stance on LLMSVS certifications and trust marks](#owasps-stance-on-llmsvs-certifications-and-trust-marks)
   - [Guidance for certifying organizations](#guidance-for-certifying-organizations)
@@ -107,15 +107,15 @@ LLMSVS はセキュリティ検証を三つの異なるレベルに分類して�
 
 LLMSVS の各レベルは一連の具体的なセキュリティ要件を提供し、それらを堅牢な LLM 搭載アプリケーションの構築と運用に必要なセキュリティ機能やプラクティスにマップしています。このアプローチは、開発者、アーキテクト、セキュリティ専門家に実践的かつ実行可能なガイドラインを身につけます。これらのアプリケーションのセキュリティを構築、強化、評価するいずれにおいても、LLMSVS は LLM 搭載システムのライフサイクルに関わるすべての利害関係者に明確なロードマップを提示します。
 
-### Assumptions
+### 想定 <a name="assumptions"></a>
 
-When utilizing the LLMSVS, it’s important to keep in mind the following assumptions:
+LLMSVS を活用する際、以下の想定を念頭に置くことが重要です。
 
-- The LLMSVS is not a replacement for adhering to secure development best practices, such as secure coding or a Secure Software Development Life Cycle (SSDLC). These practices should be integrally adopted throughout your development efforts, with the LLMSVS serving to augment them specifically for LLM-powered applications.
+- LLMSVS は、セキュアコーディングやセキュアソフトウェア開発ライフサイクル (Secure Software Development Life Cycle, SSDLC) といった、セキュアな開発ベストプラクティスに準拠することに置き換わるものではありません。これらのプラクティスは開発の取り組み全体に不可欠なものとして採用されるべきであり、LLMSVS は LLM 搭載アプリケーション向けにそれらを補強するのに役立ちます。
 
-- The LLMSVS is not intended to substitute for comprehensive risk assessments or in-depth security reviews. Rather, it serves as a guide to address potential security vulnerabilities specific to LLM-powered applications. Employing the LLMSVS should complement, not replace, these crucial security practices to ensure a more thorough evaluation and mitigation of risks.
+- LLMSVS は包括的なリスク評価や詳細なセキュリティレビューに代わるものではありません。どちらかといえば、LLM 搭載アプリケーション特有の潜在的なセキュリティ脆弱性に対処するためのガイドとして役立ちます。リスクのより徹底した評価や緩和を実現するためには、LLMSVS を採用することは、これらの重要なセキュリティプラクティスを補完すべきものであり、置き換わるものではありません。
 
-While the LLMSVS offers a comprehensive framework for enhancing the security of LLM-powered applications, it cannot ensure complete security. It should be viewed as a foundational set of security requirements, with additional protective measures taken as needed to mitigate specific LLM risks and threats.
+LLMSVS は LLM 搭載アプリケーションのセキュリティを強化するための包括的なフレームワークを提供しますが、完全なセキュリティを保証するものではありません。それはセキュリティ要件の基本セットとみなすべきであり、特定の LLM リスクや脅威を緩和するには、必要に応じて追加の保護策を講じる必要があります。
 
 ---
 
