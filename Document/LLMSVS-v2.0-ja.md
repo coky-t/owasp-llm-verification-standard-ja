@@ -5,9 +5,8 @@ version: '2.0'
 status: set to release
 ---
 
-# OWASP 大規模言語モデルセキュリティ検証標準 (Large Language Model Security Verification Standard, LLMSVS)
+# LLMSVS v2.0 — OWASP 大規模言語モデルセキュリティ検証標準 (Large Language Model Security Verification Standard, LLMSVS)
 
-**バージョン:** 2.0 (日本語)  
 **出版年:** 2026  
 
 このドキュメントは OWASP LLMSVS 日本語リリースのマークダウン版です。ウェブ表示、バージョン管理、派生ビルドに適した構成で、初期の 0.1 リリース (2024 年 2 月) からバージョン 2.0 に至るまで、完全な検証要件セットを引き継いでいます。
