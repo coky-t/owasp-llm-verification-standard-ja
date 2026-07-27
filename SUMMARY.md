@@ -6,5 +6,5 @@
 
 - [OWASP 大規模言語モデルセキュリティ検証標準](Document/README.md)
 - [リーダー](Document/leaders.md)
-- [LLMSVS v2.0](Document/OWASP_Large_Language_Model_Security_Verification_Standard-v2.0_ja.md)
-- [LLMSVS v1.0](Document/OWASP_Large_Language_Model_Security_Verification_Standard-v1.0_ja.md)
+- [LLMSVS v2.0](Document/LLMSVS-v2.0-ja.md)
+- [LLMSVS v1.0](Document/LLMSVS-v1.0-ja.md)

@@ -2,7 +2,7 @@
 
 This is the unofficial Japanese translation of the [OWASP Large Language Model Security Verification Standard](https://github.com/OWASP/www-project-llm-verification-standard).
 
-<!-- **!!! Work In Progress !!!** -->
+**!!! Work In Progress !!!**
 
 <!-- - Document Site - <https://coky-t.gitbook.io/owasp-llm-verification-standard-ja/> -->
 - Document Repository - <https://github.com/coky-t/owasp-llm-verification-standard-ja>
@@ -16,8 +16,8 @@ This is the unofficial Japanese translation of the [OWASP Large Language Model S
 
 * [OWASP 大規模言語モデルセキュリティ検証標準](Document/README.md)
 * [リーダー](Document/leaders.md)
-* [LLMSVS v2.0](Document/OWASP_Large_Language_Model_Security_Verification_Standard-v2.0_ja.md)
-* [LLMSVS v1.0](Document/OWASP_Large_Language_Model_Security_Verification_Standard-v1.0_ja.md)
+* [LLMSVS v2.0](Document/LLMSVS-v2.0-ja.md)
+* [LLMSVS v1.0](Document/LLMSVS-v1.0-ja.md)
 
 ## License
 
