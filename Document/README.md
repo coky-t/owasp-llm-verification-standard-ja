@@ -23,26 +23,26 @@ OWASP 大規模言語モデルセキュリティ検証標準 (Large Language Mod
 * 解析者 (Breakers)
 * 保守者 (Defenders)
 
-## リポジトリとコミュニティ
-
-* [GitHub リポジトリ](https://github.com/OWASP/www-project-llm-verification-standard)
-* [Releases (changelog)](https://github.com/OWASP/www-project-llm-verification-standard/releases)
-* [OWASP Slack に参加する](https://owasp.org/slack/invite)
-* [Slack の #project-llmvs](https://owasp.slack.com/messages/C06MDJG0KBK)
-
 ## プロジェクトリーダーとワーキンググループ
 
 このプロジェクトは二人のプロジェクトリーダー [Vandana Verma Sehgal](https://github.com/vermava) と [Elliot Ward](https://github.com/mowzk) が主導しています。
 
 ## 標準ドキュメント (マークダウン)
 
-- **[LLMSVS v2.0 (日本語)](OWASP_Large_Language_Model_Security_Verification_Standard-v2.0_ja.md)** — 次期 2.0 リリースに向けた現行ドラフト。
+- **[LLMSVS v2.0 (日本語)](LLMSVS-v2.0-ja.md)** — 日本語 2.0 リリースのマークダウン版。
 
-- **[LLMSVS v1.0 (日本語)](OWASP_Large_Language_Model_Security_Verification_Standard-v1.0_ja.md)** — 以前の **0.1** 公開トラック (2024 年 2 月) に適合するマークダウン版。コミュニティ PDF と同じ要件番号付けをしています。
+- **[LLMSVS v1.0 (日本語)](LLMSVS-v1.0-ja.md)** — 以前の **0.1** 公開トラック (2024 年 2 月) に適合するマークダウン版。コミュニティ PDF と同じ要件番号付けをしています。
 
 ## バージョン 2.0 は 6 月 15 日にリリース予定
 
 このブランチのマスターブランチは常に "bleeding edge version" であり、進行中の変更や他の編集が開いているかもしれません。
+
+## リポジトリとコミュニティ <a name="repository-and-community"></a>
+
+* [GitHub リポジトリ](https://github.com/OWASP/www-project-llm-verification-standard)
+* [Releases (changelog)](https://github.com/OWASP/www-project-llm-verification-standard/releases)
+* [OWASP Slack に参加する](https://owasp.org/slack/invite)
+* [Slack の #project-llmvs](https://owasp.slack.com/messages/C06MDJG0KBK)
 
 ## 標準の目標
 
@@ -55,6 +55,37 @@ OWASP 大規模言語モデルセキュリティ検証標準 (Large Language Mod
 5. **セキュリティベンチマークを確立および更新する**: AI とサイバーセキュリティの最新の進歩に合わせて、セキュリティベンチマークを作成し、定期的に更新します。
 6. **LLM セキュリティのベストプラクティスを推進する**: LLM ベースのシステムのセキュリティ保護において、業界のベストプラクティスの採用を奨励します。
 7. **利害関係者間でのセキュリティに対する期待を調整する**: 開発者、セキュリティ専門家、ベンダー、クライアントの間でセキュリティへの期待について共通認識を確立します。
+
+
+## [貢献](https://github.com/OWASP/www-project-llm-verification-standard/blob/main/CONTRIBUTING.md)
+
+OWASP 大規模言語モデルセキュリティ検証標準 (Large Language Model Security Verification Standard, LLMSVS) プロジェクトへの貢献に関心を寄せていただき、ありがとうございます。あらゆる貢献を歓迎するとともに、プロジェクトの改善に向けた皆様の取り組みに感謝します。
+
+### 始め方
+
+1. OWASP Slack ワークスペースと `#project-llmvs` チャンネルに参加します。上記の [リポジトリとコミュニティ](#repository-and-community) にあるリンクを使用します。
+2. プロジェクトの目標と目的をよく理解します。
+3. リポジトリをフォーク氏、ローカルマシンにクローンします。
+4. 必要な依存関係をインストールし、開発環境をセットアップします。
+5. 変更を行い、ローカルでテストし、期待したように動作することを確認します。
+6. 変更を含むプルリクエストを送信します。
+
+### プルリクエストガイドライン
+
+プルリクエストを送信する前に、以下を確認してください。
+
+1. 変更はプロジェクトの目標や目的に沿っていること。
+2. 変更は適切に文書化されており、プロジェクトのコーディング規約に準拠していること。
+3. 変更は新たなバグを混入したり、既存の機能を損なうことがないこと。
+4. 適用できる場合、変更にはテストを付属していること。
+5. プルリクエストには行った変更の明確かつ簡潔な説明を含むこと。
+
+### 行動規範
+
+OWASP プロジェクトのすべての貢献者には [行動規範](https://owasp.org/www-policy/operational/code-of-conduct) の遵守をお願いしています。この規範はプロジェクトコミュニティ内での行動に関する指針を示し、すべての貢献者にとって歓迎的かつ包括的な環境を維持するために役立ちます。
+
+OWASP プロジェクトへの貢献に関心を寄せていただき、ありがとうございます。プロジェクトの改善と発展に寄与する皆様の取り組みに感謝します。
+
 
 ## ライセンス
 
