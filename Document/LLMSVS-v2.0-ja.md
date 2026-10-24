@@ -11,12 +11,15 @@ status: release
 
 このドキュメントは OWASP LLMSVS 日本語リリースのマークダウン版です。ウェブ表示、バージョン管理、派生ビルドに適した構成で、初期の 0.1 リリース (2024 年 2 月) からバージョン 2.0 に至るまで、完全な検証要件セットを引き継いでいます。
 
+本リリース以降の要件変更は [v2.1 ドラフト](LLMSVS-v2.1-draft-ja.md) にあります。このドラフトはリリース版ではありません。プロジェクトが新しい版を受諾するまでこのドキュメントを引用してください。
+
 ## 目次
 
 - [扉](#frontispiece)
   - [本標準について](#about-the-standard)
   - [著作権およびライセンス](#copyright-and-license)
   - [プロジェクトリーダー](#project-leads)
+  - [他の貢献者およびレビュー担当者](#other-contributors-and-reviewers)
   - [主なサポータおよびスポンサー](#major-supporters-and-sponsors)
 - [序文](#preface)
 - [LLMSVS の活用](#utilizing-the-llmsvs)
@@ -46,12 +49,39 @@ status: release
 
 ### 著作権およびライセンス <a name="copyright-and-license"></a>
 
-Copyright © 2008–2026 The OWASP Foundation. このドキュメントは [Creative Commons Attribution-ShareAlike 4.0 International License](https://creativecommons.org/licenses/by-sa/4.0/) の下でリリースされています。再使用または配布する場合は、他者に対し本著作物のライセンス条項を明らかにする必要があります。
+Copyright © 2024–2026 The OWASP Foundation. このドキュメントは [Creative Commons Attribution-ShareAlike 4.0 International License](https://creativecommons.org/licenses/by-sa/4.0/) の下でリリースされています。再使用または配布する場合は、他者に対し本著作物のライセンス条項を明らかにする必要があります。
 
 ### プロジェクトリーダー <a name="project-leads"></a>
 
 - Vandana Verma Sehgal
 - Elliot Ward
+
+### 他の貢献者およびレビュー担当者 <a name="other-contributors-and-reviewers"></a>
+
+| 氏名 | 組織 |
+| ---- | ------------ |
+| Eric Allen | Lakera |
+| Frawa Vetterli | Lakera |
+| Rory McNamara | Snyk |
+| Raul Onitza-Klugman | Snyk |
+| Moshe Ben-Nehemia | Snyk |
+| Sam Watts | Lakera |
+
+クレジットが上記の 0.1 リストから漏れている場合には、GitHub issue をオープンして、追加されるようにします。
+
+大規模言語モデルセキュリティ検証標準は Snyk Security Labs チームが 2023 年に実施した研究に基づいて構築されています。その構成および評価手法は OWASP ASVS プロジェクトから採用されています。
+
+### 主なサポータおよびスポンサー <a name="major-supporters-and-sponsors"></a>
+
+#### Snyk
+
+LLMSVS プロジェクトは Snyk Security Labs チーム内での AI および LLM 研究からの知見を共有するために設立されました。Snyk は初期要件とプロジェクトの立ち上げを支援しました。
+
+#### Lakera
+
+Lakera は本標準の初期草案をレビューおよび校正し、モデルのライフサイクルセキュリティや安全な LLM 統合のガイダンスを提供しました。
+
+<!-- See also [SUPPORTERS.md](SUPPORTERS.md). -->
 
 ***
 
@@ -119,7 +149,7 @@ LLMSVS 要件の一部は、LLM 統合だけでなく、幅広いアプリケー
 
 OWASP はベンダ中立の非営利組織であり、ベンダ、検証者、ソフトウェアの認証は行っていません。
 
-こうした保証の表明、認証マーク、認証はいずれも OWASP によって公式に審査、登録、認証されたものではないため、そうした見解を信頼する組織は、(LLM)SVS 認証を謳う第三者や認証マークについて、その信頼性に注意する必要があります。
+こうした保証の表明、認証マーク、認証はいずれも OWASP によって公式に審査、登録、認証されたものではないため、そうした見解を信頼する組織は、LLMSVS 認証を謳う第三者や認証マークについて、その信頼性に注意する必要があります。
 
 これは、OWASP の公式な認証であると主張しない限り、組織がこうした保証サービスを提供することを妨げるものではありません。
 
