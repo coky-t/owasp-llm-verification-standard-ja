@@ -1,4 +1,24 @@
-# OWASP 大規模言語モデルセキュリティ検証標準
+---
+layout: col-sidebar
+title: OWASP Large Language Model Security Verification Standard
+tags: llm, verification, ai, security
+level: 2
+type: documentation
+pitch: 大規模言語モデルを使用するアプリケーションのセキュリティを設計、構築、検証するためのオープンスタンダード。
+---
+
+## 概要
+
+OWASP 大規模言語モデルセキュリティ検証標準
+
+OWASP 大規模言語モデルセキュリティ検証標準 (LLMSVS) は大規模言語モデルを使用するアプリケーションのためのセキュリティ要件のカタログです。アーキテクト、開発者、テスト担当者、セキュリティチームは LLM 機能において「検証済み」が何を意味するのかを合意するためにそれを使用します。これはアプリケーションの他の部分に関する OWASP アプリケーションセキュリティ検証標準を置き換えるものではありません。
+
+**現行リリース:** [LLMSVS v2.0 (日本語)](LLMSVS-v2.0-ja.md)
+
+**次期版ドラフト、レビュー用:** [LLMSVS v2.1 ドラフト](LLMSVS-v2.1-draft-ja.md)
+
+このドラフトはリリース版ではありません。プロジェクトが新しい版を受諾するまで v2.0 を引用してください。
+
 
 [![OWASP Incubator](https://img.shields.io/badge/owasp-incubator-blue.svg)](https://owasp.org/www-project-llm-verification-standard/)
 [![Creative Commons License](https://img.shields.io/github/license/OWASP/www-project-llm-verification-standard)](https://creativecommons.org/licenses/by-sa/4.0/ "CC BY-SA 4.0")
@@ -8,8 +28,6 @@
 OWASP 大規模言語モデルセキュリティ検証標準 (Large Language Model Security Verification Standard, LLMSVS) プロジェクトの主な目的は、人工知能と大規模言語モデルを活用するシステムのためにオープンなセキュリティ標準を提供することです。
 
 この標準は、アーキテクチャ、モデルライフサイクル、モデルトレーニング、モデルの運用と統合、モデルの保存と監視に関する懸念事項を含む、堅牢な LLM をバックとするアプリケーションを設計、構築、テストするための基礎を提供します。
-
-多大な時間を割いて、あるいは資金面でプロジェクトを支援してくださった団体に "[Supporters](SUPPORTERS.md)" ページで感謝の意を表します。
 
 **バグを見つけたり、アイデアがある場合、[issue を記録](https://github.com/OWASP/www-project-llm-verification-standard/issues) してください。その後、その issue のディスカッションに基づいて [プルリクエストを開く](https://github.com/OWASP/www-project-llm-verification-standard/pulls) ようにおねがいすることがあります。**
 
@@ -23,19 +41,19 @@ OWASP 大規模言語モデルセキュリティ検証標準 (Large Language Mod
 * 解析者 (Breakers)
 * 保守者 (Defenders)
 
-## プロジェクトリーダーとワーキンググループ
+## プロジェクトリーダー
 
-このプロジェクトは二人のプロジェクトリーダー [Vandana Verma Sehgal](https://github.com/vermava) と [Elliot Ward](https://github.com/mowzk) が主導しています。
+このプロジェクトは [Vandana Verma Sehgal](https://github.com/vermava) と [Elliot Ward](https://github.com/mowzk) が主導しています。初版のレビュー担当者は本標準にクレジットされています。<!-- Supporters are listed in [SUPPORTERS.md](SUPPORTERS.md). -->
 
 ## 標準ドキュメント (マークダウン)
 
-- **[LLMSVS v2.0 (日本語)](LLMSVS-v2.0-ja.md)** — 日本語 2.0 リリースのマークダウン版。
+- **[LLMSVS v2.0 (日本語)](LLMSVS-v2.0-ja.md)** — 現行リリース。この版を引用してください。
+- **[LLMSVS v2.1 ドラフト (日本語)](LLMSVS-v2.1-draft-ja.md)** — 次版の提案。リリースではありません。<!-- Kept in step with [`catalog/llmsvs-draft.json`](catalog/llmsvs-draft.json). -->
+- **[LLMSVS v1.0 (日本語)](LLMSVS-v1.0-ja.md)** — 2024 年 2 月 **0.1** テキストのマークダウン版。ファイル名は 1.0 と示しており、要件番号は初版と一致しています。
+- **[改訂履歴](https://github.com/OWASP/www-project-llm-verification-standard/blob/main/CHANGELOG.md)**
+<!-- - **[Crosswalk](mappings/crosswalk.md)**, **[profiles](profiles/)**, and a **[worked assessment](examples/worked-assessment.md)** for the draft. -->
 
-- **[LLMSVS v1.0 (日本語)](LLMSVS-v1.0-ja.md)** — 以前の **0.1** 公開トラック (2024 年 2 月) に適合するマークダウン版。コミュニティ PDF と同じ要件番号付けをしています。
-
-## バージョン 2.0 は 6 月 15 日にリリース予定
-
-このブランチのマスターブランチは常に "bleeding edge version" であり、進行中の変更や他の編集が開いているかもしれません。
+`main` には 2.0 リリースと作業中のドラフトをともに含みます。2.0 をフリーズしたままにしつつ、`main` でドラフトを継続するには、git タグを作成してください。
 
 ## リポジトリとコミュニティ <a name="repository-and-community"></a>
 
@@ -57,34 +75,9 @@ OWASP 大規模言語モデルセキュリティ検証標準 (Large Language Mod
 7. **利害関係者間でのセキュリティに対する期待を調整する**: 開発者、セキュリティ専門家、ベンダー、クライアントの間でセキュリティへの期待について共通認識を確立します。
 
 
-## [貢献](https://github.com/OWASP/www-project-llm-verification-standard/blob/main/CONTRIBUTING.md)
+## 貢献
 
-OWASP 大規模言語モデルセキュリティ検証標準 (Large Language Model Security Verification Standard, LLMSVS) プロジェクトへの貢献に関心を寄せていただき、ありがとうございます。あらゆる貢献を歓迎するとともに、プロジェクトの改善に向けた皆様の取り組みに感謝します。
-
-### 始め方
-
-1. OWASP Slack ワークスペースと `#project-llmvs` チャンネルに参加します。上記の [リポジトリとコミュニティ](#repository-and-community) にあるリンクを使用します。
-2. プロジェクトの目標と目的をよく理解します。
-3. リポジトリをフォーク氏、ローカルマシンにクローンします。
-4. 必要な依存関係をインストールし、開発環境をセットアップします。
-5. 変更を行い、ローカルでテストし、期待したように動作することを確認します。
-6. 変更を含むプルリクエストを送信します。
-
-### プルリクエストガイドライン
-
-プルリクエストを送信する前に、以下を確認してください。
-
-1. 変更はプロジェクトの目標や目的に沿っていること。
-2. 変更は適切に文書化されており、プロジェクトのコーディング規約に準拠していること。
-3. 変更は新たなバグを混入したり、既存の機能を損なうことがないこと。
-4. 適用できる場合、変更にはテストを付属していること。
-5. プルリクエストには行った変更の明確かつ簡潔な説明を含むこと。
-
-### 行動規範
-
-OWASP プロジェクトのすべての貢献者には [行動規範](https://owasp.org/www-policy/operational/code-of-conduct) の遵守をお願いしています。この規範はプロジェクトコミュニティ内での行動に関する指針を示し、すべての貢献者にとって歓迎的かつ包括的な環境を維持するために役立ちます。
-
-OWASP プロジェクトへの貢献に関心を寄せていただき、ありがとうございます。プロジェクトの改善と発展に寄与する皆様の取り組みに感謝します。
+[CONTRIBUTING.md](https://github.com/OWASP/www-project-llm-verification-standard/blob/main/CONTRIBUTING.md) をお読みください。要件変更はドラフトカタログに入ります。2.0 リリースファイルには入りません。貢献者は [OWASP 行動規範](https://owasp.org/www-policy/operational/code-of-conduct) に準拠してください。
 
 
 ## ライセンス
