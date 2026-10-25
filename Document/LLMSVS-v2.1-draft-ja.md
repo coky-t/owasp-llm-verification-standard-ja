@@ -1,17 +1,17 @@
 ---
 title: OWASP Large Language Model Security Verification Standard
-lang: en
+lang: ja
 version: '2.1-draft'
 status: draft
 ---
 
-# LLMSVS v2.1 draft — OWASP Large Language Model Security Verification Standard
+# LLMSVS v2.1 ドラフト — OWASP 大規模言語モデルセキュリティ検証標準
 
-**Status:** Draft for community review. This is not an OWASP release. Cite [LLMSVS v2.0](LLMSVS-v2.0-en.md) until this draft is accepted.
+**ステータス:** コミュニティレビュー用のドラフトです。これは OWASP リリースではありません。このドラフトが受諾されるまでは [LLMSVS v2.0](LLMSVS-v2.0-ja.md) を引用してください。
 
-**Publication target:** next edition after 2.0.
+**公開予定:** 2.0 の次版。
 
-This draft is kept in step with [`catalog/llmsvs-draft.json`](catalog/llmsvs-draft.json). Update the catalog and the sections below the preface together.
+<!-- This draft is kept in step with [`catalog/llmsvs-draft.json`](catalog/llmsvs-draft.json). Update the catalog and the sections below the preface together. -->
 
 ## What this draft changes
 
