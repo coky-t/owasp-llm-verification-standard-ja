@@ -13,18 +13,18 @@ status: draft
 
 <!-- This draft is kept in step with [`catalog/llmsvs-draft.json`](catalog/llmsvs-draft.json). Update the catalog and the sections below the preface together. -->
 
-## What this draft changes
+## 本ドラフトにおける変更点
 
-Version 2.0 kept the February 2024 requirement numbers and tightened wording. This draft makes the catalog assessable and lines it up with the OWASP Top 10 for LLM Applications 2026 (published 4 August 2026) and the OWASP Top 10 for Agentic Applications 2026.
+バージョン 2.0 では 2024 年 2 月の要件番号を維持しつつ、文言を厳密なものにしました。本ドラフトはカタログを評価可能にするとともに、OWASP Top 10 for LLM Applications 2026 (2026 年 8 月 4 日公開) および OWASP Top 10 for Agentic Applications 2026 との整合を図ります。
 
-- Every active requirement is one outcome, written as “Verify that”.
-- Levels are cumulative: Level 2 includes Level 1, and Level 3 includes Level 2.
-- Each requirement is tagged with the architectures it applies to. Everything else is Not Applicable, and the report says why.
-- Level 1 is rebuilt around secrets, inventory, untrusted context, untrusted output, tool least privilege, tenant isolation, and consumption limits.
-- Optional techniques (canaries, entropy checks, watermarking, redundant providers) move to Appendix B. They are not pass/fail requirements.
-- New requirement IDs extend the existing chapters. Withdrawn IDs are not reused.
+- すべての有効な要件は「であることを検証します」という記述の一つの成果となります。
+- レベルは累積的であり、レベル 2 にはレベル 1 を含み、レベル 3 にはレベル 2 を含みます。
+- 各要件はそれを適用するアーキテクチャでタグ付けされています。それ以外は適用外となり、レポートでは理由を述べます。
+- レベル 1 は、シークレット、インベントリ、信頼できないコンテキスト、信頼できない出力、ツールの最小権限、テナント分離、利用制限を中心に再構築されました。
+- オプション技法 (カナリア、エントロピーチェック、ウォーターマーキング、冗長なプロバイダ) は付録 B に移行しました。これらは合否要件ではありません。
+- 新しい要件 ID は既存の章を拡張します。廃止された ID は再使用されません。
 
-Requirement identifiers from 2.0 still mean the same control where the row is active. Where the level or the obligation changed, the verification note under the chapter says so.
+2.0 からの要件識別子はその行が有効である同じコントロールであることを依然として意味します。レベルや義務が変更されている場合、各省の検証注記にその記載があります。
 
 ## How to use the levels
 
