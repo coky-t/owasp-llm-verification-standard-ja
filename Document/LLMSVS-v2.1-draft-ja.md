@@ -26,15 +26,15 @@ status: draft
 
 2.0 からの要件識別子はその行が有効である同じコントロールであることを依然として意味します。レベルや義務が変更されている場合、各省の検証注記にその記載があります。
 
-## How to use the levels
+## レベルの使い方
 
-| Level | Use it for | What “pass” means |
+| レベル | 対象となる用途 | 「合格」が意味するもの |
 | --- | --- | --- |
-| Level 1 | Any LLM-backed system | The baseline controls for the features that system actually has |
-| Level 2 | Sensitive data, customer data, or internal business data | Level 1 plus the Level 2 rows for those features |
-| Level 3 | High-value transactions, regulated data, or systems whose failure stops the business | Level 2 plus the Level 3 rows for those features |
+| レベル 1 | 任意の LLM 搭載システム | そのシステムが実際に備える機能に対するベースラインコントロール |
+| レベル 2 | 機密データ、顧客データ、内部業務データ | レベル 1 に加え、それらの機能に対するレベル 2 の行 |
+| レベル 3 | 高価値取引、規制対象データ、障害が業務を停止するシステム | レベル 2 に加え、それらの機能に対するレベル 3 の行 |
 
-Pick the level before testing. Do not drop a Level 1 row because it is inconvenient. Do mark a row Not Applicable when the feature is absent.
+テスト前にレベルを選択します。レベル 1 の行を、不便であるという理由で、除外してはいけません。その機能が存在しない場合、行を適用不可とマークします。
 
 ## Applicability and Not Applicable
 
